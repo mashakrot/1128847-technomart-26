@@ -1,8 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Мария Кротова](https://up.htmlacademy.ru/htmlcss/26/user/1128847).
-* Наставник: [Андрей Грачев]
-(https://htmlacademy.ru/profile/id252055).
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
