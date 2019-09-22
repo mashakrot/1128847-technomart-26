@@ -81,12 +81,12 @@
         </section>
         <section>
             <h2>Фильтр:</h2>
-            <form action="#" method="get">
+            <form action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset>
                     <legend>Производители:</legend>
                     <ul>
                         <li>
-                            <input type="checkbox" name="bosch" id="filter_bosch">
+                            <input type="checkbox" name="bosch" id="filter_bosch" checked>
                             <label for="filter_bosch">BOSCH</label>
                         </li>
                         <li>
@@ -94,7 +94,7 @@
                             <label for="filter_interskol">Интерскол</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="makita" id="filter_makita">
+                            <input type="checkbox" name="makita" id="filter_makita" checked>
                             <label for="filter_makita">Makita</label>
                         </li>
                         <li>
@@ -111,7 +111,7 @@
                     <legend>Питание:</legend>
                     <ul>
                         <li>
-                            <input type="radio" value="battery" id="filter_battery" name="power_supply">
+                            <input type="radio" value="battery" id="filter_battery" name="power_supply" checked>
                             <label for="filter_battery">Аккумуляторные</label>
                         </li>
                         <li>
@@ -120,7 +120,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button>
+                <button type="submit">
                     Показать
                 </button>
             </form>
@@ -216,7 +216,7 @@
         </ul>
         <section>
             <p>Товар добавлен в корзину!</p>
-            <button type="button" arial-label="Закрыть окно 'Товар добавлен в корзину!' "></button>
+            <button type="button" aria-label="Закрыть окно 'Товар добавлен в корзину!' "></button>
             <a href="#">Оформить заказ</a>
             <a href="#">Продолжить покупки</a>
         </section>
