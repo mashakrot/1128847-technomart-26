@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/web/ptsans.woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/web/cuprum.woff");
+}
+
+@font-face {
+    font-family: "Cuprum-italic";
+    src: url("../fonts/web/cuprumitalic.woff")
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: "PT Sans", "Cuprum", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    line-height: 24px;
+    background-image: url("../img/technomart-index.psd");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #f3f7f9;
+    width: 100%;
+    height: 320px;
+
+}
+
+.main-header {
+    width: 100%;
+    height: 42px;
+    background-color: #293449;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    line-height: 6px;
+    justify-content: center;
+}
+
+/*#ee3643
+#a12b2f
+720*/
+.main-header-logo {
+    width: 220px;
+    height: 47px;
+    background-color: #ee3643;
+    margin: 0px;
+}
+
+.main-header-logo img {
+    padding: 15px 55px 15px 55px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    width: 720px;
+    height: 47px;
+    padding: 0px;
+    margin: 0;
+}
+
+.search {
+    width: 254px;
+    padding: 6px 16px;
+
+}
+
+.search p {
+    margin: 0px;
+
+}
+
+.tabs-and-cart {
+    list-style: none;
+    display: flex;
+    width: 300px;
+
+}
+
+.tabs-and-cart a {
+    color: #ffffff;
+    width: 150px;
+    padding: 13px
+}
+
+.tabs {
+    background-image: url(../img/svg-technomart/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+
+}
+
+.cart {
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+
+}
+
+.place-your-order {
+    color: #ffffff;
+    width: 150px;
+    height: 42px;
+    background-color: #63a63e;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.short-information {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    height: auto;
+    align-items: center;
+    height: 158px;
+    margin: auto;
+
+}
+
+.information {
+    color: #ee3643;
+    font-size: 16px;
+    font-family: "Cuprum-italic", italic;
+}
+
+.address {
+    font-size: 14px;
+    color: #32425c;
+    font-family: "Cuprum"
+}
+
+.address a {
+    color: #ee3643;
+    font-size: 21px;
+    display: flex;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px 70px 10px 50px;
+    background-image: url(../img/svg-technomart/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.login {
+    width: 120px;
+    height: 45px;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: #000000;
+    display: block;
+    object-position: center;
+    align-items: center;
+}
+
+.registration {
+    width: 150px;
+    height: 45px;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.registered-person {
+    list-style: none;
+    width: 300px;
+    height: 45px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.registered-person a {
+    color: #000000;
+    font-size: 21px;
+}
+
+.my-orders-and-cabinet {
+    list-style: none;
+    text-decoration: underline;
+    display: flex;
+}
+
+.my-orders-and-cabinet a {
+    color: #32425c;
+    font-size: 16px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-navigation {
+    font-size: 17px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #35445e;
+    height: 60px;
+    width: 940px;
+    align-items: center;
+}
+
+.main-navigation-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-navigation-list a {
+    color: #ffffff;
+}
+
+.short-information + .main-navigation {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/*КОНТЕНТ*/
+

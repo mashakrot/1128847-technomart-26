@@ -4,49 +4,66 @@
 <head>
     <meta charset="utf-8">
     <title>Католог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/web/cuprum.woff">
+    <link rel="stylesheet" href="fonts/web/ptsans.woff">
 </head>
 
 <body>
     <header>
-        <div>
-            <a href="#">
-                <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип интернет-магазина 'Техномарт'" width="137" height="22">
-            </a>
-            <!--Поиск:-->
-            <ul>
-                <li>
-                    <a href="#">Закладки:<span>0</span></a></li>
-                <li>
-                    <a href="#">Корзина:<span>10</span></a></li>
-            </ul>
-            <a href="#">Оформить заказ</a>
+        <div class="main-header">
+            <p class="main-header-logo">
+                <a href="index.html">
+                    <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип интернет-магазина 'Техномарт'" width="109" height="18">
+                </a>
+            </p>
+            <div class="navigation">
+                <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+                    <p>
+                        <label for="search">
+                            <img src="img/svg-technomart/icon-search.svg" alt="Значок поиска">
+                        </label>
+                        <input id="search" type="text" name="search" value="" placeholder="Поиск:">
+                    </p>
+                </form>
+                <ul class="tabs-and-cart">
+                    <li class="tabs">
+                        <a href="#">Закладки:<span>0</span></a></li>
+                    <li class="cart">
+                        <a href="#">Корзина:<span>10</span></a></li>
+                </ul>
+                <a href="#" class="place-your-order">Оформить заказ</a>
+            </div>
         </div>
-        <div>
-            <p>
+        <div class="short-information">
+            <p class="information">
                 Интернет-магазин<br>
                 строительных материалов<br>
                 и инструментов для ремонта
             </p>
-            <p>
+            <p class="address">
                 <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                 г. Санкт-Петербург, ул. Б. Коюшенная, д. 19/8
             </p>
-            <ul>
-                <li>
-                    <a href="#">Равшан Джамшутович</a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="#">Мои заказы</a></li>
-                <li><a href="#">Личный кабинет</a></li>
-            </ul>
+            <div class="user">
+                <ul class="registered-person">
+                    <li class="your-login">
+                        <a href="#">Равшан Джамшутович</a>
+                    </li>
+                    <li class="exit">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                <ul class="my-orders-and-cabinet">
+                    <li><a href="#">Мои заказы</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
+        <div class="main-navigation">
             <nav>
-                <ul>
+                <ul class="main-navigation-list">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Каталог</a></li>
@@ -240,7 +257,7 @@
     </main>
 </body>
 <footer>
-    <a href="#">
+    <a href="index.html">
         <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип интернет-магазина 'Техномарт'" width="137" height="22">
     </a>
     <p>
