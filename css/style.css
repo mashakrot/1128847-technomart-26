@@ -1,18 +1,3 @@
-@font-face {
-    font-family: "PT Sans";
-    src: url("../fonts/web/ptsans.woff");
-}
-
-@font-face {
-    font-family: "Cuprum";
-    src: url("../fonts/web/cuprum.woff");
-}
-
-@font-face {
-    font-family: "Cuprum-italic";
-    src: url("../fonts/web/cuprumitalic.woff")
-}
-
 body,
 html {
     padding: 0;
@@ -31,7 +16,8 @@ a {
     text-decoration: none;
 }
 
-header {
+/*HEADER*/
+.header {
     background-color: #f3f7f9;
     width: 100%;
     height: 320px;
@@ -136,16 +122,15 @@ header {
 .information {
     color: #ee3643;
     font-size: 16px;
-    font-family: "Cuprum-italic", italic;
+    font-family: italic;
 }
 
-.address {
+.tell-and-address {
     font-size: 14px;
     color: #32425c;
-    font-family: "Cuprum"
 }
 
-.address a {
+.tell-and-address a {
     color: #ee3643;
     font-size: 21px;
     display: flex;
@@ -175,6 +160,11 @@ header {
     color: #000000;
 }
 
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
 .registered-person {
     list-style: none;
     width: 300px;
@@ -200,10 +190,6 @@ header {
     font-size: 16px;
 }
 
-.user {
-    display: flex;
-    flex-direction: column;
-}
 
 .main-navigation {
     font-size: 17px;
@@ -232,5 +218,269 @@ header {
     margin: auto;
 }
 
-/*КОНТЕНТ*/
+/*КОНТЕНТ */
+.main-path {
+    list-style: none;
+    display: flex;
+    font-size: 13px;
+}
 
+.main-path a {
+    color: #000000;
+}
+
+.catalog-title {
+    font-size: 30px;
+    color: #32425c;
+    width: 940px;
+    height: 89px;
+    background-color: #f2f6f8;
+}
+
+.manufacturers {
+    font-size: 17px;
+}
+
+.list-of-manufacturers {
+    list-style: none;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.power-supply {
+    font-size: 17px;
+}
+
+.list-of-power-supply {
+    list-style: none;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.company-features h2 {
+    font-size: 30px;
+}
+
+.button-to-show {
+    background-color: #ffffff;
+    border: 1px solid rgb(229, 229, 229)
+}
+
+.products {
+    list-style: none;
+}
+
+.name-of-product {
+    color: #000000;
+    font-size: 18px;
+}
+
+.products del {
+    color: #999999;
+    font-size: 17px;
+}
+
+.products p {
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #ee3643;
+    width: 122px;
+    height: 28px;
+}
+
+.buy {
+    color: #ffffff;
+    font-size: 14px;
+    display: none;
+}
+
+.in-the-bookmark {
+    color: #32425c;
+    font-size: 14px;
+    display: none;
+}
+
+.item-in-cart {
+    display: none;
+}
+
+.large-choice,
+.delivery {
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.list-of-transport-companies {
+    list-style: none;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.more-about-company {
+    font-size: 14px;
+    width: 220px;
+    height: 38px;
+    background-color: #ee3643;
+}
+
+.more-about-company a {
+    color: #ffffff;
+}
+
+.contacts h2 {
+    font-size: 30px;
+}
+
+.our-office {
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.write-us {
+    font-size: 14px;
+    width: 300px;
+    height: 38px;
+    background-color: #ee3643;
+}
+
+.write-us a {
+    color: #ffffff;
+}
+
+.large-map {
+    display: none;
+}
+
+.letter {
+    display: none;
+}
+
+/*FOOTER*/
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: #32425c;
+    position: absolute;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 220px;
+    height: 63px;
+    background-color: #ee3643;
+    margin: 0px;
+}
+
+.footer-logo img {
+    padding: 20px 42px 20px 42px;
+}
+
+.address {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 28px;
+}
+
+.address a {
+    color: #ffffff;
+}
+
+.footer-navigation-part1 {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+}
+
+.footer-navigation-part1 a {
+    color: #ffffff;
+}
+
+.footer-navigation-part2 {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+}
+
+.footer-navigation-part2 a {
+    color: #ffda96;
+}
+
+.requisites {
+    width: 100%;
+    height: 107px;
+    background-color: #293449;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rights-reserved {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.social-network {
+    list-style: none;
+    display: flex;
+}
+
+/*#212a3a*/
+
+.icon-vk {
+    width: 40px;
+    height: 40px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.icon-vk img {
+    width: 28px;
+}
+
+.icon-fb {
+    width: 40px;
+    height: 40px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.icon-fb img {
+    height: 25px;
+}
+
+.icon-insta {
+    width: 40px;
+    height: 40px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.icon-insta img {
+    height: 25px;
+}
+
+.feedback {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.feedback a {
+    color: #ffda96;
+}
+
+.developers {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.developers a {
+    color: #ffda96;
+}
