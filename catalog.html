@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Католог</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum%7CPT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -83,23 +82,23 @@
             <li><a>Перфораторы</a></li>
         </ul>
         <h1 class="catalog-title">Перфораторы</h1>
-        <section>
+        <section class="sorting">
             <h2>Сортировка:</h2>
-            <ul>
+            <ul class="sorting-by">
                 <li><a href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По функционалу</a></li>
             </ul>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+            <ul class="less-more">
+                <li class="less"><a href="#"></a></li>
+                <li class="more"><a href="#"></a></li>
             </ul>
         </section>
-        <section>
+        <section class="filters">
             <h2>Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset>
-                    <legend>Цена:</legend>
+                    <legend class="price">Цена:</legend>
                     <input type="text">
                     <input type="text">
                 </fieldset>
@@ -241,18 +240,21 @@
             <a href="#">Оформить заказ</a>
             <a href="#">Продолжить покупки</a>
         </section>
-        <ul>
-            <li><a>1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
+        <ul class="pages">
+            <li><a class="page-number">1</a></li>
+            <li><a class="page-number" href="#">2</a></li>
+            <li><a class="page-number" href="#">3</a></li>
+            <li><a class="page-number" href="#">Следующая</a></li>
         </ul>
-        <sction>
+        <section class="product-description">
             <h2>Пара слов о перфораторах</h2>
             <p>
                 Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-        </sction>
+            </p>
+            <p>
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p>
+        </section>
     </main>
 </body>
 <footer class="footer">

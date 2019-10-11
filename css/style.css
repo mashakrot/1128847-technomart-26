@@ -122,7 +122,8 @@ a {
 .information {
     color: #ee3643;
     font-size: 16px;
-    font-family: italic;
+    font-family: "Cuprum";
+    font-style: italic;
 }
 
 .tell-and-address {
@@ -223,6 +224,7 @@ a {
     list-style: none;
     display: flex;
     font-size: 13px;
+    text-transform: uppercase;
 }
 
 .main-path a {
@@ -235,10 +237,72 @@ a {
     width: 940px;
     height: 89px;
     background-color: #f2f6f8;
+    text-transform: uppercase;
+}
+
+.sorting {
+    width: 700px;
+    height: 38px;
+    background-color: #f7f3ec;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.sorting h2 {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.sorting-by {
+    list-style: none;
+    display: flex;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #ee3643;
+}
+
+.sorting-by a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.less-more {
+    list-style: none;
+    display: flex
+}
+
+.less {
+    background-image: url(../img/svg-technomart/icon-up-dir.svg);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.more {
+    background-image: url(../img/svg-technomart/icon-down-dir.svg);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.filters {
+    text-transform: uppercase;
+}
+
+.filters h2 {
+    font-size: 13px;
+    font-weight: lighter;
+    background-color: #f7f3ec;
+    width: 220px;
+    height: 38px;
+}
+
+.price {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .manufacturers {
     font-size: 17px;
+    font-weight: bold;
 }
 
 .list-of-manufacturers {
@@ -249,6 +313,7 @@ a {
 
 .power-supply {
     font-size: 17px;
+    font-weight: bold;
 }
 
 .list-of-power-supply {
@@ -259,11 +324,13 @@ a {
 
 .company-features h2 {
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .button-to-show {
     background-color: #ffffff;
-    border: 1px solid rgb(229, 229, 229)
+    border: 1px solid rgb(229, 229, 229);
+    text-transform: uppercase;
 }
 
 .products {
@@ -321,6 +388,7 @@ a {
     width: 220px;
     height: 38px;
     background-color: #ee3643;
+    text-transform: uppercase;
 }
 
 .more-about-company a {
@@ -329,6 +397,7 @@ a {
 
 .contacts h2 {
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .our-office {
@@ -341,6 +410,7 @@ a {
     width: 300px;
     height: 38px;
     background-color: #ee3643;
+    text-transform: uppercase;
 }
 
 .write-us a {
@@ -354,6 +424,46 @@ a {
 .letter {
     display: none;
 }
+
+.pages {
+    font-size: 13px;
+    display: flex;
+}
+
+.pages li {
+    list-style: none;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(229, 229, 229);
+}
+
+.page-number {
+    color: #000000;
+}
+
+.pages li:first-child {
+    background-color: #ee3643;
+    border: 1px solid rgba(238, 54, 67);
+}
+
+li:first-child .page-number {
+    color: #ffffff;
+}
+
+.pages li:last-child {
+    width: 140px;
+    text-transform: uppercase;
+}
+
+.product-description h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.product-description p {
+    font-size: 13px;
+}
+
 
 /*FOOTER*/
 .footer {
