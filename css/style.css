@@ -6,7 +6,6 @@ html {
     color: #000000;
     font-size: 13px;
     line-height: 24px;
-    background-image: url("../img/technomart-index.psd");
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: top center;
@@ -18,7 +17,7 @@ a {
 
 /*HEADER*/
 .header {
-    background-color: #f3f7f9;
+    /* background-color: #f3f7f9;*/
     width: 100%;
     height: 320px;
 
@@ -27,7 +26,7 @@ a {
 .main-header {
     width: 100%;
     height: 42px;
-    background-color: #293449;
+    /*background-color: #293449;*/
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -42,7 +41,7 @@ a {
 .main-header-logo {
     width: 220px;
     height: 47px;
-    background-color: #ee3643;
+    /*background-color: #ee3643;*/
     margin: 0px;
 }
 
@@ -54,27 +53,24 @@ a {
     display: flex;
     justify-content: flex-start;
     width: 720px;
-    height: 47px;
+    height: 41px;
     padding: 0px;
     margin: 0;
 }
 
 .search {
-    width: 254px;
-    padding: 6px 16px;
-
+    width: 252px;
+    padding: 6px 10px;
 }
 
 .search p {
     margin: 0px;
-
 }
 
 .tabs-and-cart {
     list-style: none;
     display: flex;
     width: 300px;
-
 }
 
 .tabs-and-cart a {
@@ -101,7 +97,7 @@ a {
     color: #ffffff;
     width: 150px;
     height: 42px;
-    background-color: #63a63e;
+    /*background-color: #63a63e;*/
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -135,9 +131,9 @@ a {
     color: #ee3643;
     font-size: 21px;
     display: flex;
-    border: 3px solid rgb(255, 255, 255);
+    /*border: 3px solid rgb(255, 255, 255);*/
     padding: 10px 70px 10px 50px;
-    background-image: url(../img/svg-technomart/icon-phone.svg);
+    /*background-image: url(../img/svg-technomart/icon-phone.svg);*/
     background-repeat: no-repeat;
     background-position: center left;
 }
@@ -148,9 +144,6 @@ a {
     font-size: 21px;
     background-color: #ffffff;
     color: #000000;
-    display: block;
-    object-position: center;
-    align-items: center;
 }
 
 .registration {
@@ -170,7 +163,7 @@ a {
     list-style: none;
     width: 300px;
     height: 45px;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     display: flex;
     align-items: center;
 }
@@ -196,9 +189,12 @@ a {
     font-size: 17px;
     line-height: 20px;
     color: #ffffff;
-    background-color: #35445e;
+    /*background-color: #35445e;*/
     height: 60px;
     width: 940px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     align-items: center;
 }
 
@@ -213,11 +209,7 @@ a {
     color: #ffffff;
 }
 
-.short-information + .main-navigation {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
+
 
 /*КОНТЕНТ */
 .main-path {
@@ -236,14 +228,14 @@ a {
     color: #32425c;
     width: 940px;
     height: 89px;
-    background-color: #f2f6f8;
+    /*background-color: #f2f6f8;*/
     text-transform: uppercase;
 }
 
 .sorting {
     width: 700px;
     height: 38px;
-    background-color: #f7f3ec;
+    /*background-color: #f7f3ec;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -289,7 +281,7 @@ a {
 .filters h2 {
     font-size: 13px;
     font-weight: lighter;
-    background-color: #f7f3ec;
+    /*background-color: #f7f3ec;*/
     width: 220px;
     height: 38px;
 }
@@ -328,12 +320,12 @@ a {
 }
 
 .button-to-show {
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     border: 1px solid rgb(229, 229, 229);
     text-transform: uppercase;
 }
 
-.products {
+.catalog-list {
     list-style: none;
 }
 
@@ -342,15 +334,15 @@ a {
     font-size: 18px;
 }
 
-.products del {
+.catalog-list del {
     color: #999999;
     font-size: 17px;
 }
 
-.products p {
+.catalog-list p {
     font-size: 17px;
     color: #ffffff;
-    background-color: #ee3643;
+    /*background-color: #ee3643;*/
     width: 122px;
     height: 28px;
 }
@@ -387,7 +379,7 @@ a {
     font-size: 14px;
     width: 220px;
     height: 38px;
-    background-color: #ee3643;
+    /*background-color: #ee3643;*/
     text-transform: uppercase;
 }
 
@@ -409,7 +401,7 @@ a {
     font-size: 14px;
     width: 300px;
     height: 38px;
-    background-color: #ee3643;
+    /*background-color: #ee3643;*/
     text-transform: uppercase;
 }
 
@@ -425,32 +417,23 @@ a {
     display: none;
 }
 
-.pages {
+.pagination-list {
     font-size: 13px;
     display: flex;
 }
 
-.pages li {
+.pagination-list li {
     list-style: none;
     width: 38px;
     height: 38px;
     border: 1px solid rgba(229, 229, 229);
 }
 
-.page-number {
+.pagination-list {
     color: #000000;
 }
 
-.pages li:first-child {
-    background-color: #ee3643;
-    border: 1px solid rgba(238, 54, 67);
-}
-
-li:first-child .page-number {
-    color: #ffffff;
-}
-
-.pages li:last-child {
+.pagination-list li:last-child {
     width: 140px;
     text-transform: uppercase;
 }
@@ -469,7 +452,7 @@ li:first-child .page-number {
 .footer {
     height: 300px;
     width: 100%;
-    background-color: #32425c;
+    /*background-color: #32425c;*/
     position: absolute;
 }
 
@@ -482,7 +465,7 @@ li:first-child .page-number {
 .footer-logo {
     width: 220px;
     height: 63px;
-    background-color: #ee3643;
+    /*background-color: #ee3643;*/
     margin: 0px;
 }
 
@@ -494,6 +477,7 @@ li:first-child .page-number {
     font-size: 18px;
     color: #ffffff;
     line-height: 28px;
+    /*????*/
 }
 
 .address a {
@@ -523,7 +507,7 @@ li:first-child .page-number {
 .requisites {
     width: 100%;
     height: 107px;
-    background-color: #293449;
+    /*background-color: #293449;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -593,4 +577,516 @@ li:first-child .page-number {
 
 .developers a {
     color: #ffda96;
+}
+
+
+/*--------- Сеточные стили ---------*/
+body,
+html {
+    min-height: 2249px;
+    min-width: 1200px;
+}
+
+body {
+    /*Временно для сетки*/
+    background-image: url(../img/technomart-index.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.tabs-and-cart {
+    padding-left: 0px;
+    height: 100%;
+    margin: 0 auto;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.short-information-container {
+    width: 540px;
+    height: 100%;
+    margin: auto;
+    margin-left: 51px;
+    display: flex;
+    justify-content: space-between;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.information {
+    width: 200px;
+    height: 64px;
+    margin-top: 50px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.tell-and-address {
+    width: 270px;
+    height: 70px;
+    margin-top: 47px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.login-registration {
+    height: 45px;
+    width: 281px;
+    margin: auto;
+    margin-top: 46px;
+    margin-right: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.user {
+    width: 300px;
+    height: 100%;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.registered-person {
+    width: 300px;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 46px;
+    padding-left: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.my-orders-and-cabinet {
+    width: 213px;
+    height: 19px;
+    padding-left: 0px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-left: 16px;
+    /*Временно для сетки*/
+    outline: 1px solid coral;
+}
+
+.main-navigation nav {
+    width: 940px;
+    height: 100%;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
+}
+
+.main-navigation-list {
+    width: 940px;
+    height: 100%;
+    margin: auto;
+    padding-left: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid coral;
+}
+
+.what-is-not-visible {
+    height: 1978px;
+    width: 940px;
+    margin: 0 auto;
+    /*Временно для сетки*/
+    outline: 1px solid brown;
+}
+
+.features-and-contacts {
+    width: 940px;
+    height: 372px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    /*Временно для сетки*/
+    outline: 1px solid brown;
+}
+
+.company-features {
+    width: 540px;
+    height: 100%;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.company-features h2 {
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.large-choice,
+.delivery {
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 31px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.list-of-transport-companies {
+    height: 102px;
+    width: 220px;
+    margin: 0px;
+    margin-top: 25px;
+    padding-left: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.more-about-company {
+    width: 220px;
+    height: 38px;
+    margin: 0px;
+    margin-top: 35px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.contacts {
+    width: 300px;
+    height: 100%;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.contacts h2 {
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.our-office {
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 31px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.small-map {
+    height: 158px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 35px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.write-us {
+    height: 38px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 40px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.content {
+    min-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.container {
+    width: 940px;
+    /*height: auto;*/
+    height: 1347px;
+    margin: 0 auto;
+    /*Временно для сетки*/
+    outline: 1px solid blue;
+}
+
+.main-path {
+    height: 14px;
+    width: auto;
+    margin: auto;
+    margin-top: 23px;
+    margin-left: 0px;
+    padding-left: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.catalog-title {
+    margin: auto;
+    margin-top: 22px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.sorting {
+    margin: auto;
+    margin-top: 21px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.filters {
+    margin: auto 0px;
+    margin-top: 21px;
+    margin-right: 20px;
+    width: 220px;
+    height: 746px;
+    float: left;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.filters h2 {
+    width: 100%;
+    height: 36px;
+    margin: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid coral;
+}
+
+.filters form {
+    width: 100%;
+    height: 690px;
+    margin: 0px;
+    margin-top: 20px;
+    /*Временно для сетки*/
+    outline: 1px solid brown;
+}
+
+.fieldset-price {
+    height: 187px;
+    padding: 0px;
+    margin: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.companies {
+    height: 260px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid coral;
+}
+
+.fieldset-power-supply {
+    height: 198px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid coral;
+}
+
+.filters button {
+    height: 37px;
+    width: 140px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 0px;
+    margin: auto;
+    margin-top: 8px;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.catalog {
+    width: 700px;
+    height: 992px;
+    margin: 0px;
+    margin-bottom: 73px;
+    float: right;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.catalog-list {
+    width: 700px;
+    height: 992px;
+    margin: 0px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*Временно для сетки*/
+    outline: 1px solid green;
+}
+
+.catalog-list li {
+    width: 220px;
+    height: 318px;
+    margin-top: 20px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.pagination-list {
+    width: 284px;
+    height: 38px;
+    padding-left: 0px;
+    margin-left: 240px;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.product-description {
+    min-width: 1200px;
+    height: 260px;
+    margin: 0px;
+    padding-left: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid blue;
+}
+
+.index-footer {
+    margin-top: 86px;
+}
+
+.footer {
+    height: 298px;
+    width: 100%;
+}
+
+.footer-container {
+    width: 940px;
+    margin: 0 auto;
+    /*Временно для сетки*/
+    outline: 1px solid blue;
+}
+
+.footer-navigation {
+    height: 193px;
+    width: 100%;
+    margin: 0 auto;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.footer-logo-and-class {
+    width: 380px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.footer-logo {
+    height: 68px;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
+}
+
+.address {
+    width: 330px;
+    height: auto;
+    min-height: 42px;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 32px;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
+}
+
+.footer-navigation-list {
+    width: 550px;
+    height: 100%;
+}
+
+.footer-navigation-part1 {
+    height: 18px;
+    width: 548px;
+    padding-left: 0px;
+    margin: auto;
+    margin-right: 0px;
+    margin-top: 41px;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
+}
+
+.footer-navigation-part2 {
+    height: 18px;
+    width: 525px;
+    padding-left: 0px;
+    margin: auto;
+    margin-right: 0px;
+    margin-top: 40px;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
+}
+
+.requisites {
+    height: 105px;
+    width: 100%;
+}
+
+.footer-container2 {
+    width: 950px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*Временно для сетки*/
+    outline: 1px solid yellow;
+}
+
+.requisites-container-part1 {
+    width: 522px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*Временно для сетки*/
+    outline: 1px solid coral;
+}
+
+.rights-reserved {
+    width: 230px;
+    height: 38px;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 38px;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
+}
+
+.social-network {
+    width: 132px;
+    height: 40px;
+    padding-left: 0px;
+    margin: auto;
+    margin-top: 36px;
+    margin-right: 0px;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
+}
+
+.requisites-container-part2 {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*Временно для сетки*/
+    outline: 1px solid coral;
+}
+
+.feedback {
+    width: 140px;
+    height: 35px;
+    margin-top: 38px;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
+}
+
+.developers {
+    width: 112px;
+    height: 35px;
+    margin-top: 38px;
+    /*Временно для сетки*/
+    outline: 1px solid deepskyblue;
 }
