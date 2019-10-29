@@ -5,11 +5,21 @@ html {
     font-family: "PT Sans", "Cuprum", sans-serif;
     color: #000000;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 22px;
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: top center;
+    min-height: 2249px;
+    min-width: 1200px;
 }
+
+body {
+    /*Временно для сетки*/
+    background-image: url(../img/technomart-index.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
 
 a {
     text-decoration: none;
@@ -17,7 +27,7 @@ a {
 
 /*HEADER*/
 .header {
-    /* background-color: #f3f7f9;*/
+    background-color: #f3f7f9;
     width: 100%;
     height: 320px;
 
@@ -26,7 +36,7 @@ a {
 .main-header {
     width: 100%;
     height: 42px;
-    /*background-color: #293449;*/
+    background-color: #293449;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -41,12 +51,29 @@ a {
 .main-header-logo {
     width: 220px;
     height: 47px;
-    /*background-color: #ee3643;*/
+    background-color: #a12b2f;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.main-header-logo a {
+    width: 220px;
+    height: 42px;
+    display: block;
+    background-color: #ee3643;
     margin: 0px;
 }
 
+.main-header-logo a:hover {
+    background-color: #ca2c37;
+}
+
+.main-header-logo a:active {
+    background-color: #ba2732;
+}
+
 .main-header-logo img {
-    padding: 15px 55px 15px 55px;
+    padding: 13px 55px 15px 55px;
 }
 
 .navigation {
@@ -59,50 +86,285 @@ a {
 }
 
 .search {
-    width: 252px;
-    padding: 6px 10px;
+    width: 270px;
+    height: 42px;
 }
 
 .search p {
+    font-size: 17px;
     margin: 0px;
+}
+
+.search label {
+    display: block;
+    width: 270px;
+    height: 36px;
+    margin: 0px;
+    padding-top: 6px;
+}
+
+.search input {
+    border: none;
+    width: 226px;
+    height: 25px;
+    color: #ee3643;
+    margin: 0 auto;
+    margin-left: 40px;
+    background-color: #293449;
+}
+
+.search input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    margin: auto;
+    margin-left: 17px;
+    background-image: url(../img/svg-technomart/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.4;
+}
+
+.search:hover {
+    background-color: #212a3a;
+}
+
+.search input:hover {
+    background-color: #212a3a;
+}
+
+.search:hover ::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    margin: auto;
+    margin-left: 17px;
+    background-image: url(../img/svg-technomart/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.search:focus-within {
+    background-color: #ffffff;
+}
+
+.search input:focus {
+    background-color: #ffffff;
+}
+
+.search input:focus::placeholder {
+    color: #ee3643;
+    opacity: 1;
+}
+
+.search:focus-within ::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    margin: auto;
+    margin-left: 17px;
+    background-image: url(../img/svg-technomart/icon-search-red.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.search:active ::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    margin: auto;
+    margin-left: 17px;
+    background-image: url(../img/svg-technomart/icon-search-red.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
 }
 
 .tabs-and-cart {
     list-style: none;
     display: flex;
     width: 300px;
+    padding-left: 0px;
+    height: 25px;
+    margin: 0 auto;
 }
 
 .tabs-and-cart a {
     color: #ffffff;
     width: 150px;
-    padding: 13px
 }
 
 .tabs {
+    height: 100%;
+    width: 150px;
+}
+
+.tabs a {
+    display: block;
+    width: 109px;
+    height: 25px;
+    padding-top: 16px;
+    padding-left: 41px;
+}
+
+.tabs::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    top: 12px;
+    margin: auto;
+    margin-left: 17px;
     background-image: url(../img/svg-technomart/icon-bookmark.svg);
     background-repeat: no-repeat;
-    background-size: 13px 13px;
+    background-position: 0 0;
+    opacity: 0.4;
+}
 
+.tabs a:hover {
+    background-color: #212a3a;
+}
+
+.tabs:hover ::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    top: 12px;
+    margin: auto;
+    margin-left: -24px;
+    background-image: url(../img/svg-technomart/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.tabs a:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.tabs:active ::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    top: 12px;
+    margin: auto;
+    margin-left: -24px;
+    background-image: url(../img/svg-technomart/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.4;
 }
 
 .cart {
+    height: 100%;
+    width: 150px;
+}
+
+.cart::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    top: 12px;
+    margin: auto;
+    margin-left: 17px;
     background-image: url(../img/svg-technomart/icon-cart.svg);
     background-repeat: no-repeat;
-    background-size: 13px 13px;
+    background-position: 0 0;
+    opacity: 0.4;
+}
 
+.cart a {
+    display: block;
+    width: 109px;
+    height: 25px;
+    padding-top: 16px;
+    padding-left: 41px;
+}
+
+.cart a:hover {
+    background-color: #212a3a;
+}
+
+.cart:hover ::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    top: 12px;
+    margin: auto;
+    margin-left: -24px;
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.cart a:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.cart:active ::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    top: 12px;
+    margin: auto;
+    margin-left: -24px;
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.4;
 }
 
 .place-your-order {
     color: #ffffff;
     width: 150px;
-    height: 42px;
-    /*background-color: #63a63e;*/
+    height: 26px;
+    background-color: #63a63e;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    padding-top: 16px;
 }
 
+.place-your-order:hover {
+    background-color: #5fbb2d;
+}
+
+.place-your-order:active {
+    background-color: #518534;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.short-information-container {
+    width: 540px;
+    height: 100%;
+    margin: auto;
+    margin-left: 51px;
+    display: flex;
+    justify-content: space-between;
+}
 
 .short-information {
     display: flex;
@@ -112,7 +374,6 @@ a {
     align-items: center;
     height: 158px;
     margin: auto;
-
 }
 
 .information {
@@ -120,103 +381,405 @@ a {
     font-size: 16px;
     font-family: "Cuprum";
     font-style: italic;
+    width: 200px;
+    height: 64px;
+    margin-top: 50px;
 }
 
 .tell-and-address {
-    font-size: 14px;
+    font-size: 13px;
     color: #32425c;
+    width: 270px;
+    height: 70px;
+    margin-top: 47px;
 }
 
 .tell-and-address a {
-    color: #ee3643;
+    color: #e9292a;
     font-size: 21px;
+    font-weight: bolder;
+    height: 31px;
     display: flex;
-    /*border: 3px solid rgb(255, 255, 255);*/
-    padding: 10px 70px 10px 50px;
-    /*background-image: url(../img/svg-technomart/icon-phone.svg);*/
+    padding-top: 8px;
+    padding-left: 58px;
+    border: 3px solid rgb(255, 255, 255);
+    background-image: url(../img/svg-technomart/icon-phone.svg);
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: center left 12px;
+}
+
+.tell-and-address a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: -46px;
+    margin-top: 2px;
+    background-image: url(../img/svg-technomart/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.login-registration {
+    height: 45px;
+    width: 281px;
+    margin: auto;
+    margin-top: 46px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .login {
-    width: 120px;
-    height: 45px;
     font-size: 21px;
     background-color: #ffffff;
     color: #000000;
+    width: 45px;
+    height: 19px;
+    padding: 11px 27px 15px 46px;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    margin: auto;
+    margin-top: 3px;
+    margin-left: -32px;
+    background-image: url(../img/svg-technomart/icon-login.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.login:hover {
+    color: #ee3643;
+}
+
+.login:hover::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    margin: auto;
+    margin-top: 3px;
+    margin-left: -32px;
+    background-image: url(../img/svg-technomart/icon-login-blue.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.login:active {
+    color: #c5c5c5;
+}
+
+.login:active::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    margin: auto;
+    margin-top: 3px;
+    margin-left: -32px;
+    background-image: url(../img/svg-technomart/icon-login.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .registration {
-    width: 150px;
-    height: 45px;
     font-size: 21px;
     background-color: #ffffff;
     color: #000000;
+    height: 19px;
+    width: 100px;
+    padding: 11px 30px 15px 20px;
+}
+
+.registration:hover {
+    color: #ee3643;
+}
+
+.registration:active {
+    color: #c5c5c5;
 }
 
 .user {
     display: flex;
     flex-direction: column;
+    width: 300px;
+    height: 100%;
 }
 
 .registered-person {
     list-style: none;
-    width: 300px;
-    height: 45px;
-    /*background-color: #ffffff;*/
+    background-color: #ffffff;
     display: flex;
     align-items: center;
+    width: 300px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: 46px;
+    padding-left: 0px;
 }
+
+.your-login {
+    padding-left: 46px;
+}
+
+.your-login a:active {
+    color: #c5c5c5;
+}
+
+.your-login::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: -32px;
+    margin-top: 3px;
+    background-image: url(../img/svg-technomart/icon-user.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.your-login:hover::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: -32px;
+    margin-top: 3px;
+    background-image: url(../img/svg-technomart/icon-user-blue.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.your-login:active::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: -32px;
+    margin-top: 3px;
+    background-image: url(../img/svg-technomart/icon-user.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.exit {
+    width: 23px;
+    height: 21px;
+    margin-left: 19px;
+}
+
+.exit a {
+    display: block;
+    width: 23px;
+    height: 21px;
+}
+
+.exit::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 1px;
+    margin-top: 2px;
+    background-image: url(../img/svg-technomart/icon-logout.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.exit:hover::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 1px;
+    margin-top: 2px;
+    background-image: url(../img/svg-technomart/icon-logout-blue.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.exit:active::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 1px;
+    margin-top: 2px;
+    background-image: url(../img/svg-technomart/icon-logout.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 
 .registered-person a {
     color: #000000;
     font-size: 21px;
 }
 
-.my-orders-and-cabinet {
+.my-orders-and-cabinet-list {
     list-style: none;
     text-decoration: underline;
     display: flex;
+    justify-content: space-between;
+    width: 213px;
+    height: 19px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-left: 16px;
 }
 
-.my-orders-and-cabinet a {
+.my-orders-and-cabinet a:hover {
+    color: #ee3643;
+    text-decoration: underline #ee3643;
+}
+
+.my-orders-and-cabinet a:active {
+    color: #c5c5c5;
+    text-decoration: underline #c5c5c5;
+}
+
+.point {
+    width: 4px;
+    height: 4px;
+    margin-top: 9px;
+    background-color: #32425c;
+    border-radius: 50%;
+}
+
+.my-orders-and-cabinet-list a {
     color: #32425c;
     font-size: 16px;
 }
 
 
 .main-navigation {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 20px;
     color: #ffffff;
-    /*background-color: #35445e;*/
+    background-color: #293449;
     height: 60px;
     width: 940px;
     display: flex;
     justify-content: center;
     margin: auto;
-    align-items: center;
+    margin-top: 0px;
+}
+
+.main-navigation nav {
+    width: 940px;
+    height: 100%;
 }
 
 .main-navigation-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    align-items: center;
+    background-color: #35445e;
+    width: 940px;
+    height: 57px;
+    margin: auto;
+    margin-top: 0px;
+    padding-left: 0px;
 }
 
 .main-navigation-list a {
     color: #ffffff;
+    display: block;
+    height: 40px;
+    width: auto;
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
+.main-navigation-list a:hover {
+    background-color: #293449;
+}
 
+.main-navigation-list a:active {
+    background-color: #1d2739;
+    color: rgba(255, 255, 255, 0.6);
+}
 
 /*КОНТЕНТ */
+/*-------------------КАТАЛОГ-----------------*/
+
+.content {
+    min-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container {
+    width: 940px;
+    /*height: auto;*/
+    height: 1347px;
+    margin: 0 auto;
+}
+
 .main-path {
     list-style: none;
     display: flex;
     font-size: 13px;
     text-transform: uppercase;
+    height: 25px;
+    width: auto;
+    margin: auto;
+    margin-top: 18px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.main-path li {
+    margin-left: 40px;
+}
+
+.main-path li:first-child {
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.main-path li:first-child::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: -2px;
+    margin-top: 5px;
+    background-image: url(../img/svg-technomart/icon-home.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.main-path-item::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: -24px;
+    margin-top: 5px;
+    background-image: url(../img/svg-technomart/icon-right-small.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .main-path a {
@@ -226,74 +789,344 @@ a {
 .catalog-title {
     font-size: 30px;
     color: #32425c;
-    width: 940px;
-    height: 89px;
-    /*background-color: #f2f6f8;*/
+    width: 913px;
+    height: 57px;
+    background-color: #f2f6f8;
     text-transform: uppercase;
+    margin: auto;
+    margin-top: 17px;
+    padding-left: 27px;
+    padding-top: 31px;
 }
 
 .sorting {
     width: 700px;
     height: 38px;
-    /*background-color: #f7f3ec;*/
+    background-color: #f7f3ec;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
+    margin: auto;
+    margin-top: 21px;
 }
 
 .sorting h2 {
     font-size: 13px;
     font-weight: lighter;
+    margin: 0px;
+    margin-top: -3px;
+    margin-left: 19px;
 }
 
 .sorting-by {
+    width: 360px;
+    padding-left: 0px;
+    margin: 0 auto;
+    margin-top: -2px;
+    margin-left: 139px;
     list-style: none;
     display: flex;
+    justify-content: space-between;
+}
+
+.sorting-by a {
+    color: rgba(0, 0, 0, 0.4);
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: #ee3643;
 }
 
-.sorting-by a {
-    color: rgba(0, 0, 0, 0.5);
+.sorting-by a:hover {
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #ee3643;
+}
+
+.sorting-by a:active {
+    color: #ee3643;
+    text-decoration: none;
 }
 
 .less-more {
+    width: 50px;
+    height: 20px;
+    margin: 0px;
+    margin-right: 13px;
     list-style: none;
-    display: flex
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+
 }
 
 .less {
+    height: 100%;
+    width: 20px;
+}
+
+
+.less a {
+    display: block;
+    height: 100%;
+    width: 20px;
+}
+
+.less a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 3px;
+    margin-top: 5px;
     background-image: url(../img/svg-technomart/icon-up-dir.svg);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.less a:hover::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 3px;
+    margin-top: 5px;
+    background-image: url(../img/svg-technomart/icon-up-dir.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.less a:active::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 3px;
+    margin-top: 5px;
+    background-image: url(../img/svg-technomart/icon-up-dir.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .more {
+    display: block;
+    height: 100%;
+    width: 20px;
+}
+
+.more a {
+    display: block;
+    height: 100%;
+    width: 20px;
+}
+
+.more a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 5px;
+    margin-top: 5px;
     background-image: url(../img/svg-technomart/icon-down-dir.svg);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.4;
+}
+
+.more a:hover::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-image: url(../img/svg-technomart/icon-down-dir.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.more a:active::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-image: url(../img/svg-technomart/icon-down-dir-red.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
 }
 
 .filters {
     text-transform: uppercase;
+    margin: auto 0px;
+    margin-top: 21px;
+    margin-right: 20px;
+    width: 220px;
+    height: 746px;
+    float: left;
+
 }
 
 .filters h2 {
     font-size: 13px;
     font-weight: lighter;
-    /*background-color: #f7f3ec;*/
+    background-color: #f7f3ec;
+    width: 202px;
+    height: 30px;
+    margin: 0px;
+    padding-left: 18px;
+    padding-top: 6px;
+
+}
+
+.filters form {
+    width: 100%;
+    height: 690px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.fieldset-price {
     width: 220px;
-    height: 38px;
+    height: 192px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.fieldset-price::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 10px;
+    margin: auto;
+    margin-top: 25px;
+    background-image: url(../img/ten2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .price {
     font-size: 17px;
     font-style: normal;
     font-weight: bold;
+
+}
+
+.range-filter {
+    width: 220px;
+    margin-top: 19px;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    background-color: #f7f3ec;
+    border-radius: 5px;
+    padding-top: 39px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.scale {
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.toggle {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background-image: url(../img/svg-technomart/filter-button.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.toggle-min {
+    left: 10px;
+}
+
+.toggle-max {
+    left: 134px;
+}
+
+.price-controls {
+    font-size: 0;
+    width: 220px;
+    height: 38px;
+    margin: auto;
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-controls input {
+    width: 95px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Cuprum", sans-serif;
+    color: #000000;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f3ec;
+}
+
+.price-controls::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    margin: auto;
+    margin-top: 19px;
+    margin-left: 105px;
+    background-color: #000000;
+    background-position: 0 0;
+}
+
+.fieldset-companies {
+    height: 260px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.fieldset-companies::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 10px;
+    margin: auto;
+    margin-top: 25px;
+    background-image: url(../img/ten2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .manufacturers {
     font-size: 17px;
+    margin: 0px;
+    margin-top: 21px;
     font-weight: bold;
 }
 
@@ -301,17 +1134,128 @@ a {
     list-style: none;
     font-size: 15px;
     line-height: 40px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.item-of-manufacturers {
+    padding-left: 34px;
+}
+
+
+.item-of-manufacturers label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -34px;
+    margin-top: 9px;
+    background-image: url(../img/svg-technomart/checkbox-off.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:hover + label:hover::before {
+    background-image: url(../img/svg-technomart/checkbox-off-b5b5b5.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -34px;
+    margin-top: 9px;
+    background-image: url(../img/svg-technomart/checkbox-on.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:hover:checked + label:hover::after {
+    background-image: url(../img/svg-technomart/checkbox-on-b5b5b5.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.fieldset-power-supply {
+    height: 198px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
 }
 
 .power-supply {
     font-size: 17px;
     font-weight: bold;
+    margin: 0px;
+    margin-top: 25px;
 }
 
 .list-of-power-supply {
     list-style: none;
     font-size: 15px;
     line-height: 40px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.item-of-power-supply {
+    padding-left: 34px;
+}
+
+.item-of-power-supply label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -34px;
+    margin-top: 8px;
+    background-image: url(../img/svg-technomart/radio-off.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio:hover + label:hover::before {
+    background-image: url(../img/svg-technomart/radio-off-b5b5b5.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -34px;
+    margin-top: 8px;
+    background-image: url(../img/svg-technomart/radio-on.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio:hover:checked + label:hover::after {
+    background-image: url(../img/svg-technomart/radio-on-b5b5b5.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .company-features h2 {
@@ -320,89 +1264,1498 @@ a {
 }
 
 .button-to-show {
-    /*background-color: #ffffff;*/
     border: 1px solid rgb(229, 229, 229);
     text-transform: uppercase;
+    height: 37px;
+    width: 140px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 0px;
+    margin: auto;
+    margin-top: 7px;
+}
+
+.catalog {
+    width: 700px;
+    height: 992px;
+    margin: 0px;
+    margin-bottom: 73px;
+    float: right;
 }
 
 .catalog-list {
     list-style: none;
+    width: 700px;
+    height: 992px;
+    margin: 0px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    width: 218px;
+    height: 316px;
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+}
+
+.flag::after {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 70px;
+    margin: auto;
+    margin-left: 158px;
+    margin-top: -302px;
+    background-image: url(../img/new-flag.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.catalog-item a {
+    width: 218px;
+    height: 316px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+.actions {
+    width: 218px;
+    height: 316px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -316px;
+}
+
+.catalog-item:hover img {
+    display: none;
+}
+
+.catalog-item:hover .item-info {
+    margin-top: 178px;
+}
+
+.catalog-item .actions:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.actions .buy {
+    display: none;
+}
+
+.actions:hover .buy {
+    display: block;
+    width: 135px;
+    height: 28px;
+    border-bottom: 3px solid #367315;
+    background-color: #63a63e;
+    border-radius: 3px;
+    margin: 0px;
+    margin-top: 41px;
+    margin-left: 42px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0px;
+    padding-top: 7px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.actions:hover .buy::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -27px;
+    margin-top: 4px;
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.4;
+}
+
+.actions:hover .buy:hover {
+    background-color: #5fbb2d;
+    border-color: #367315;
+    box-shadow: none;
+    opacity: 1;
+}
+
+.actions:hover .buy:hover::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -27px;
+    margin-top: 4px;
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.actions:hover .buy:active {
+    background-color: #518534;
+    width: 135px;
+    height: 31px;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+}
+
+.actions:hover .buy:active::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -27px;
+    margin-top: 4px;
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.actions .in-the-bookmark {
+    display: none;
+}
+
+.actions:hover .in-the-bookmark {
+    display: block;
+    width: 129px;
+    height: 28px;
+    border-radius: 3px;
+    border: 3px solid #63a63e;
+    color: #32425c;
+    background-color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0px;
+    padding-top: 4px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 8px;
+    margin-left: 42px;
+}
+
+.actions:hover .in-the-bookmark:hover {
+    border-color: #32425c;
+    box-shadow: none;
+    opacity: 1;
+}
+
+.actions:hover .in-the-bookmark:active {
+    border-color: #d5d5d5;
+    box-shadow: none;
+    color: #d5d5d5;
+    opacity: 1;
+}
+
+.catalog-item .actions:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.item-info {
+    width: 165px;
+    height: 122px;
+    margin: 0px;
+    margin-left: 26px;
+    margin-top: -3px;
 }
 
 .name-of-product {
+    font-size: 18px;
+    width: 165px;
+    height: 45px;
+    line-height: 21px;
+    margin: 0px;
+    margin-top: 7px;
+    margin-bottom: 6px;
     color: #000000;
     font-size: 18px;
+    text-align: center;
 }
 
-.catalog-list del {
+.catalog-item del {
     color: #999999;
     font-size: 17px;
+    margin: auto;
+    margin-left: 53px;
 }
 
-.catalog-list p {
+.catalog-item p {
     font-size: 17px;
     color: #ffffff;
-    /*background-color: #ee3643;*/
-    width: 122px;
-    height: 28px;
+    margin: 0 auto;
+    width: 109px;
+    height: 30px;
+    margin-top: 6px;
+    margin-left: 15px;
+    padding-top: 8px;
+    padding-left: 33px;
+    background-image: url(../img/svg-technomart/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
-.buy {
-    color: #ffffff;
-    font-size: 14px;
-    display: none;
-}
-
-.in-the-bookmark {
-    color: #32425c;
-    font-size: 14px;
-    display: none;
+.catalog-item:nth-child(3n) p {
+    margin-top: 36px;
 }
 
 .item-in-cart {
     display: none;
 }
 
-.large-choice,
+.pagination-list {
+    width: 284px;
+    height: 38px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-left: 240px;
+    color: #000000;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-list li {
+    list-style: none;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(229, 229, 229);
+    border-radius: 3px;
+}
+
+.pagination-list li:last-child {
+    width: 138px;
+    text-transform: uppercase;
+}
+
+.pagination-list-item {
+    display: block;
+    color: #000000;
+    width: 21px;
+    height: 30px;
+    padding-top: 6px;
+    padding-left: 15px;
+}
+
+.pagination-list li:hover {
+    border-color: #bdc6ca;
+}
+
+.pagination-list li:active {
+    border-color: #ee3643;
+}
+
+.pagination-list-item-active {
+    border-color: #ee3643;
+}
+
+.pagination-list-item-active a {
+    color: #ffffff;
+    background-color: #ee3643;
+    border-color: #ee3643;
+    border-radius: 3px;
+}
+
+.pagination-list-item-active:hover {
+    color: #ffffff;
+    background-color: #ee3643;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+}
+
+.pagination-list-item-active:active {
+    color: #ffffff;
+    background-color: #ee3643;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+}
+
+li:last-child .pagination-list-item {
+    display: block;
+    color: #000000;
+    width: 107px;
+    height: 32px;
+    padding-top: 6px;
+    padding-left: 31px;
+}
+
+.product-description {
+    min-width: 1200px;
+    height: 260px;
+    background-color: #f3f7f9;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.product-description-container {
+    height: 100%;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.product-description-container h2 {
+    margin: 0 auto;
+    padding-top: 68px;
+}
+
+.paragraph1 {
+    margin: auto;
+    margin-top: 31px;
+}
+
+.paragraph2 {
+    margin: auto;
+    margin-top: 1px;
+    line-height: 24px;
+}
+
+.product-description h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.product-description p {
+    font-size: 13px;
+}
+
+/*------------------ГЛАВНАЯ СТРАНИЦА-----------------*/
+
+.index-content {
+    height: 1328px;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 59px;
+}
+
+.content-topics {
+    width: 940px;
+    height: 410px;
+    margin: 0px;
+}
+
+.types-of-goods-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 940px;
+    height: 123px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.types-of-goods-item {
+    height: 123px;
+    width: 300px;
+}
+
+.types-of-goods-item h2 {
+    font-size: 24px;
+    color: #ffffff;
+    width: 120px;
+    height: 30px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 23px;
+}
+
+.types-of-goods-item p {
+    display: none;
+}
+
+.types-of-goods-item a {
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    width: 117px;
+    height: 31px;
+    color: #ffffff;
+    margin: 0px;
+    margin-left: 25px;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding-top: 7px;
+    padding-left: 18px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.types-of-goods-item a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.types-of-goods-item a:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item1 {
+    background-color: #ffbf47;
+}
+
+.item1::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    margin: auto;
+    margin-left: 213px;
+    margin-top: 31px;
+    background-image: url(../img/svg-technomart/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.item2 {
+    background-color: #3bbce3;
+}
+
+.item2::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    margin: auto;
+    margin-left: 197px;
+    margin-top: 33px;
+    background-image: url(../img/svg-technomart/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.item3 {
+    background-color: #dc91d8;
+}
+
+.item3 a {
+    width: 113px;
+    padding-left: 20px;
+}
+
+.item3::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    margin: auto;
+    margin-left: 191px;
+    margin-top: 31px;
+    background-image: url(../img/svg-technomart/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.discount-services-list {
+    list-style: none;
+    height: 266px;
+    width: 300px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    float: right;
+
+}
+
+.discount-services-item {
+    height: 123px;
+    width: 300px;
+}
+
+.discount-services-item h2 {
+    font-size: 24px;
+    color: #ffffff;
+    width: 150px;
+    height: 30px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 23px;
+}
+
+.discount-services-item a {
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    width: 117px;
+    height: 31px;
+    color: #ffffff;
+    margin: 0px;
+    margin-left: 25px;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding-top: 7px;
+    padding-left: 18px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.discount-services-item a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.discount-services-item a:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item4 {
+    background-color: #8ed78f;
+}
+
+.item4::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    margin: auto;
+    margin-left: 196px;
+    margin-top: 26px;
+    background-image: url(../img/svg-technomart/icon-4.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.item4 a {
+    padding-left: 16px;
+}
+
+.item5 {
+    background-color: #ffc047;
+}
+
+.item5::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 70px;
+    margin: auto;
+    margin-left: 191px;
+    margin-top: 32px;
+    background-image: url(../img/svg-technomart/icon-5.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.item5 a {
+    padding-left: 28px;
+    width: 105px;
+}
+
+.slider {
+    width: 620px;
+    height: 266px;
+    margin: 0px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slider-container {
+    width: 620px;
+    height: 266px;
+    margin: 0px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 31px;
+    z-index: 100;
+    width: 40px;
+    height: 20px;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+
+.slider-controls label {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    margin: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls label::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+    display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+    display: block;
+}
+
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 6px;
+    height: 6px;
+    margin: 0px;
+    margin-top: -3px;
+    margin-left: -3px;
+    background-color: #ee3643;
+    border-radius: 50%;
+}
+
+.slider-list {
+    width: 620px;
+    height: 266px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slider-list::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    left: 25px;
+    margin-top: 114px;
+    background-image: url(../img/svg-technomart/icon-left.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.slider-list::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    left: 578px;
+    margin-top: -152px;
+    background-image: url(../img/svg-technomart/icon-right.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.slider-item {
+    width: 620px;
+    height: 266px;
+    margin: 0;
+    display: none;
+}
+
+.slider-item:nth-child(1) {
+    background-image: url(../img/dreli.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+}
+
+.slider-item:nth-child(2) {
+    background-image: url(../img/perforator.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+}
+
+.slider-item h2 {
+    height: 36px;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0px;
+    margin-left: 21px;
+    padding-top: 28px;
+}
+
+.slider-item p {
+    max-width: 300px;
+    height: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0px;
+    margin-top: -4px;
+    margin-left: 24px;
+}
+
+.slider-item-button {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 157px;
+    height: 31px;
+    margin: 0px;
+    margin-top: 116px;
+    margin-left: 25px;
+    background-color: #ee3643;
+    border-radius: 3px;
+    padding-left: 38px;
+    padding-top: 7px;
+}
+
+.slider-item-button:hover {
+    background-color: #ca2c37;
+}
+
+.slider-item-button:active {
+    background-color: #ba2732;
+}
+
+.popular-product {
+    height: 427px;
+    width: 940px;
+    margin: 0px;
+    margin-top: 52px;
+}
+
+.popular-product-title {
+    width: 940px;
+    height: 89px;
+    margin: 0px;
+    background-color: #f9f5f0;
+}
+
+.popular-product-title h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #32425c;
+    width: 350px;
+    float: left;
+    margin: 0px;
+    margin-top: 32px;
+    margin-left: 25px;
+}
+
+.button-all-products {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 212px;
+    height: 31px;
+    margin: 0px;
+    margin-top: 25px;
+    margin-right: 24px;
+    float: right;
+    background-color: #ee3643;
+    border-radius: 3px;
+    padding-left: 40px;
+    padding-top: 7px;
+}
+
+.button-all-products:hover {
+    background-color: #ca2c37;
+}
+
+.button-all-products:active {
+    background-color: #ba2732;
+}
+
+.popular-product-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-product-item {
+    width: 218px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+}
+
+.popular-product-item a {
+    width: 218px;
+    height: 316px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+.popular-product-item a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popular-product-item a:focus {
+    opacity: 0.4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popular-product-item a:active {
+    opacity: 0.4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popular-product-actions {
+    width: 218px;
+    height: 316px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -316px;
+}
+
+.popular-product-item:hover img {
+    display: none;
+}
+
+.popular-product-item:hover .popular-item-info {
+    margin-top: 177px;
+}
+
+.popular-product-item .actions:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popular-product-actions .buy {
+    display: none;
+}
+
+.popular-product-actions:hover .buy {
+    display: block;
+    width: 135px;
+    height: 28px;
+    border-bottom: 3px solid #367315;
+    background-color: #63a63e;
+    border-radius: 3px;
+    margin: 0px;
+    margin-top: 41px;
+    margin-left: 42px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0px;
+    padding-top: 7px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.popular-product-actions:hover .buy::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -27px;
+    margin-top: 4px;
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.4;
+}
+
+.popular-product-actions:hover .buy:hover {
+    background-color: #5fbb2d;
+    border-color: #367315;
+    box-shadow: none;
+    opacity: 1;
+}
+
+.popular-product-actions:hover .buy:hover::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -27px;
+    margin-top: 4px;
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.popular-product-actions:hover .buy:active {
+    background-color: #518534;
+    width: 135px;
+    height: 31px;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+}
+
+.popular-product-actions:hover .buy:active::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -27px;
+    margin-top: 4px;
+    background-image: url(../img/svg-technomart/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.popular-product-actions .in-the-bookmark {
+    display: none;
+}
+
+.popular-product-actions:hover .in-the-bookmark {
+    display: block;
+    width: 129px;
+    height: 28px;
+    border-radius: 3px;
+    border: 3px solid #63a63e;
+    color: #32425c;
+    background-color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0px;
+    padding-top: 4px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 8px;
+    margin-left: 42px;
+}
+
+.popular-product-actions:hover .in-the-bookmark:hover {
+    border-color: #32425c;
+    box-shadow: none;
+    opacity: 1;
+}
+
+.popular-product-actions:hover .in-the-bookmark:active {
+    border-color: #d5d5d5;
+    box-shadow: none;
+    color: #d5d5d5;
+    opacity: 1;
+}
+
+.popular-product-item .actions:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popular-item-info {
+    color: #000000;
+    width: 165px;
+    height: 125px;
+    margin: 0 auto;
+    font-size: 17px;
+    margin-left: 26px;
+    margin-top: -5px;
+}
+
+.name-of-popular-product {
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.popular-product-item del {
+    color: #999999;
+    font-size: 17px;
+    margin: auto;
+    margin-left: 53px;
+}
+
+.popular-product-item p {
+    font-size: 17px;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 109px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 15px;
+    padding-top: 8px;
+    padding-left: 33px;
+    background-image: url(../img/svg-technomart/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.popular-product-item:nth-child(4) p {
+    margin-top: 37px;
+}
+
+.popular-manufacturer {
+    height: 417px;
+    width: 940px;
+    margin: 0px;
+    margin-top: 22px;
+}
+
+.popular-manufacturer-title {
+    width: 940px;
+    height: 89px;
+    margin: 0px;
+    background-color: #f9f5f0;
+}
+
+.popular-manufacturer-title h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 460px;
+    color: #32425c;
+    float: left;
+    margin: 0px;
+    margin-top: 31px;
+    margin-left: 25px;
+}
+
+.popular-manufacturer-title a {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 212px;
+    height: 31px;
+    margin: 0px;
+    margin-top: 25px;
+    margin-right: 24px;
+    float: right;
+    background-color: #ee3643;
+    border-radius: 3px;
+    padding-left: 40px;
+    padding-top: 7px;
+    border-radius: 3px;
+}
+
+.popular-manufacturer-title a:hover {
+    background-color: #ca2c37;
+}
+
+.popular-manufacturer-title a:active {
+    background-color: #ba2732;
+}
+
+.popular-manufacturer-list {
+    list-style: none;
+    padding-left: 0px;
+    height: 310px;
+    width: 940px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popular-manufacturer-item {
+    width: 218px;
+    height: 143px;
+    border: 1px solid #e5e5e5;
+    margin: 0px;
+    margin-top: 19px;
+}
+
+
+.popular-manufacturer-item a {
+    display: block;
+    width: 218px;
+    height: 143px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-manufacturer-item a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popular-manufacturer-item a:focus {
+    opacity: 0.4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popular-manufacturer-item a:active {
+    opacity: 0.4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-container {
+    width: 100%;
+    height: 522px;
+    margin: 0px;
+    margin-top: 86px;
+    background-color: #f4f8f9;
+}
+
+.service {
+    width: 940px;
+    height: 522px;
+    margin: 0 auto;
+}
+
+.service-title {
+    height: 112px;
+    width: 940px;
+    margin: 0px;
+    padding-top: 56px;
+}
+
+.service-title h2 {
+    width: 160px;
+    margin: 0px;
+    margin-top: 11px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.service-title p {
+    width: 400px;
+    height: 45px;
+    margin: 0px;
+    margin-top: 31px;
+    line-height: 24px;
+}
+
+.provide-services {
+    width: 940px;
+    height: 220px;
+    margin: 0px;
+    margin-top: 51px;
+    display: flex;
+}
+
+.provide-services-list {
+    height: 186px;
+    width: 240px;
+    margin: 0px;
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+.provide-services-list::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 280px;
+    margin: auto;
+    margin-left: 231px;
+    margin-top: -41px;
+    background-image: url(../img/ten.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.provide-services-list button {
+    width: 240px;
+    height: 62px;
+    border: none;
+    font-size: 21px;
+    color: #ffffff;
+    background-color: #32425c;
+    float: left;
+    padding: 0px;
+    padding-left: 20px;
+    text-align: left;
+    border: 1px solid #405069;
+}
+
+.provide-services-list button:hover {
+    background-color: #293449;
+}
+
+.provide-services-list button:active {
+    background-color: #ffffff;
+    color: #32425c;
+    border: none;
+}
+
+.provide-services-list .provide-services-item-active {
+    color: #32425c;
+    background-color: #ffffff;
+    border: none;
+}
+
+.provide-services-list .provide-services-item-active:hover {
+    background-color: #ffffff;
+}
+
+.service-delivery {
+    width: 300px;
+    height: 220px;
+    margin: 0px;
+    margin-left: 72px;
+}
+
+.service-delivery h3 {
+    font-size: 36px;
+    color: #32425c;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-top: 22px;
+    margin-left: 8px;
+}
+
+.service-delivery::after {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 310px;
+    margin: auto;
+    margin-left: 159px;
+    margin-top: -132px;
+    background-image: url(../img/kartinka-dostavki.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.service-delivery p {
+    margin: 0px;
+    margin-top: 34px;
+    margin-left: 8px;
+    line-height: 24px;
+}
+
+.service-credit {
+    display: none;
+    width: 300px;
+    height: 220px;
+    margin: 0px;
+    margin-left: 72px;
+}
+
+.service-credit h3 {
+    font-size: 36px;
+    color: #32425c;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-top: 22px;
+    margin-left: 8px;
+}
+
+.service-credit p {
+    margin: 0px;
+    margin-top: 34px;
+    margin-left: 8px;
+    line-height: 24px;
+}
+
+.service-credit a {
+    display: block;
+    height: 31px;
+    width: 162px;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #ee3643;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-top: 26px;
+    margin-left: 8px;
+    padding-top: 7px;
+    padding-left: 33px;
+}
+
+.service-credit::after {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 310px;
+    margin: auto;
+    margin-left: 174px;
+    margin-top: -173px;
+    background-image: url(../img/kartinka-kredita.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.service-guarantee {
+    display: none;
+    width: 390px;
+    height: 220px;
+    margin: 0px;
+    margin-left: 72px;
+}
+
+.service-guarantee h3 {
+    font-size: 36px;
+    color: #32425c;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-top: 22px;
+    margin-left: 8px;
+}
+
+.service-guarantee p {
+    margin: 0px;
+    margin-top: 34px;
+    margin-left: 8px;
+    line-height: 24px;
+}
+
+.service-guarantee::after {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 310px;
+    margin: auto;
+    margin-left: 246px;
+    margin-top: -178px;
+    background-image: url(../img/kartinka-garantii.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.features-and-contacts {
+    width: 940px;
+    height: 372px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-features {
+    width: 540px;
+    height: 100%;
+}
+
+.company-features h2 {
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+}
+
+.large-choice {
+    font-size: 13px;
+    line-height: 25px;
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 23px;
+}
+
 .delivery {
     font-size: 13px;
     line-height: 25px;
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 31px;
 }
 
 .list-of-transport-companies {
     list-style: none;
     font-size: 18px;
     line-height: 40px;
+    height: 102px;
+    width: 220px;
+    margin: 0px;
+    margin-top: 20px;
+    padding-left: 36px;
 }
+
+.list-of-transport-companies li::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    margin: auto;
+    margin-left: -36px;
+    margin-top: 21px;
+    background-position: 0 0;
+    background-color: #ee3643;
+}
+
 
 .more-about-company {
     font-size: 14px;
-    width: 220px;
-    height: 38px;
-    /*background-color: #ee3643;*/
+    width: 195px;
+    height: 30px;
+    background-color: #ee3643;
+    border-radius: 3px;
     text-transform: uppercase;
+    padding-top: 8px;
+    padding-left: 25px;
+    margin: 0px;
+    margin-top: 45px;
+}
+
+.more-about-company:hover {
+    background-color: #ca2c37;
+}
+
+.more-about-company:active {
+    background-color: #ba2732;
 }
 
 .more-about-company a {
     color: #ffffff;
 }
 
+.contacts {
+    width: 300px;
+    height: 100%;
+}
+
 .contacts h2 {
     font-size: 30px;
     text-transform: uppercase;
+    height: 30px;
+    width: 100%;
+    margin: 0px;
 }
 
 .our-office {
     font-size: 13px;
     line-height: 25px;
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 23px;
+}
+
+.small-map {
+    height: 158px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 40px;
+}
+
+.small-map a {
+    height: 158px;
+    width: 100%;
+    margin: 0px;
 }
 
 .write-us {
     font-size: 14px;
-    width: 300px;
-    height: 38px;
-    /*background-color: #ee3643;*/
+    height: 30px;
+    width: 255px;
+    padding-top: 8px;
+    padding-left: 45px;
+    border-radius: 3px;
+    background-color: #ee3643;
     text-transform: uppercase;
+    margin: 0px;
+    margin-top: 40px;
+}
+
+.write-us:hover {
+    background-color: #ca2c37;
+}
+
+.write-us:active {
+    background-color: #ba2732;
 }
 
 .write-us a {
@@ -417,555 +2770,29 @@ a {
     display: none;
 }
 
-.pagination-list {
-    font-size: 13px;
-    display: flex;
-}
-
-.pagination-list li {
-    list-style: none;
-    width: 38px;
-    height: 38px;
-    border: 1px solid rgba(229, 229, 229);
-}
-
-.pagination-list {
-    color: #000000;
-}
-
-.pagination-list li:last-child {
-    width: 140px;
-    text-transform: uppercase;
-}
-
-.product-description h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-.product-description p {
-    font-size: 13px;
-}
-
-
-/*FOOTER*/
-.footer {
-    height: 300px;
-    width: 100%;
-    /*background-color: #32425c;*/
-    position: absolute;
-}
-
-.footer-navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer-logo {
-    width: 220px;
-    height: 63px;
-    /*background-color: #ee3643;*/
-    margin: 0px;
-}
-
-.footer-logo img {
-    padding: 20px 42px 20px 42px;
-}
-
-.address {
-    font-size: 18px;
-    color: #ffffff;
-    line-height: 28px;
-    /*????*/
-}
-
-.address a {
-    color: #ffffff;
-}
-
-.footer-navigation-part1 {
-    list-style: none;
-    font-size: 18px;
-    display: flex;
-}
-
-.footer-navigation-part1 a {
-    color: #ffffff;
-}
-
-.footer-navigation-part2 {
-    list-style: none;
-    font-size: 18px;
-    display: flex;
-}
-
-.footer-navigation-part2 a {
-    color: #ffda96;
-}
-
-.requisites {
-    width: 100%;
-    height: 107px;
-    /*background-color: #293449;*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.rights-reserved {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.social-network {
-    list-style: none;
-    display: flex;
-}
-
-/*#212a3a*/
-
-.icon-vk {
-    width: 40px;
-    height: 40px;
-    background-color: #212a3a;
-    border-radius: 50%;
-}
-
-.icon-vk img {
-    width: 28px;
-}
-
-.icon-fb {
-    width: 40px;
-    height: 40px;
-    background-color: #212a3a;
-    border-radius: 50%;
-}
-
-.icon-fb img {
-    height: 25px;
-}
-
-.icon-insta {
-    width: 40px;
-    height: 40px;
-    background-color: #212a3a;
-    border-radius: 50%;
-}
-
-.icon-insta img {
-    height: 25px;
-}
-
-.feedback {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.feedback a {
-    color: #ffda96;
-}
-
-.developers {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.developers a {
-    color: #ffda96;
-}
-
-
-/*--------- Сеточные стили ---------*/
-body,
-html {
-    min-height: 2249px;
-    min-width: 1200px;
-}
-
-body {
-    /*Временно для сетки*/
-    background-image: url(../img/technomart-index.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-}
-
-.tabs-and-cart {
-    padding-left: 0px;
-    height: 100%;
-    margin: 0 auto;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.short-information-container {
-    width: 540px;
-    height: 100%;
-    margin: auto;
-    margin-left: 51px;
-    display: flex;
-    justify-content: space-between;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.information {
-    width: 200px;
-    height: 64px;
-    margin-top: 50px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.tell-and-address {
-    width: 270px;
-    height: 70px;
-    margin-top: 47px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.login-registration {
-    height: 45px;
-    width: 281px;
-    margin: auto;
-    margin-top: 46px;
-    margin-right: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.user {
-    width: 300px;
-    height: 100%;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.registered-person {
-    width: 300px;
-    height: 45px;
-    margin: 0 auto;
-    margin-top: 46px;
-    padding-left: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.my-orders-and-cabinet {
-    width: 213px;
-    height: 19px;
-    padding-left: 0px;
-    margin: 0 auto;
-    margin-top: 8px;
-    margin-left: 16px;
-    /*Временно для сетки*/
-    outline: 1px solid coral;
-}
-
-.main-navigation nav {
-    width: 940px;
-    height: 100%;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
-}
-
-.main-navigation-list {
-    width: 940px;
-    height: 100%;
-    margin: auto;
-    padding-left: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid coral;
-}
-
-.what-is-not-visible {
-    height: 1978px;
-    width: 940px;
-    margin: 0 auto;
-    /*Временно для сетки*/
-    outline: 1px solid brown;
-}
-
-.features-and-contacts {
-    width: 940px;
-    height: 372px;
-    margin: 0 auto;
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    /*Временно для сетки*/
-    outline: 1px solid brown;
-}
-
-.company-features {
-    width: 540px;
-    height: 100%;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.company-features h2 {
-    height: 30px;
-    width: 100%;
-    margin: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.large-choice,
-.delivery {
-    height: 40px;
-    width: 100%;
-    margin: 0px;
-    margin-top: 31px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.list-of-transport-companies {
-    height: 102px;
-    width: 220px;
-    margin: 0px;
-    margin-top: 25px;
-    padding-left: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.more-about-company {
-    width: 220px;
-    height: 38px;
-    margin: 0px;
-    margin-top: 35px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.contacts {
-    width: 300px;
-    height: 100%;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.contacts h2 {
-    height: 30px;
-    width: 100%;
-    margin: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.our-office {
-    height: 40px;
-    width: 100%;
-    margin: 0px;
-    margin-top: 31px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.small-map {
-    height: 158px;
-    width: 100%;
-    margin: 0px;
-    margin-top: 35px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.write-us {
-    height: 38px;
-    width: 100%;
-    margin: 0px;
-    margin-top: 40px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.content {
-    min-width: 1200px;
-    height: auto;
-    margin: 0 auto;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.container {
-    width: 940px;
-    /*height: auto;*/
-    height: 1347px;
-    margin: 0 auto;
-    /*Временно для сетки*/
-    outline: 1px solid blue;
-}
-
-.main-path {
-    height: 14px;
-    width: auto;
-    margin: auto;
-    margin-top: 23px;
-    margin-left: 0px;
-    padding-left: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.catalog-title {
-    margin: auto;
-    margin-top: 22px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.sorting {
-    margin: auto;
-    margin-top: 21px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.filters {
-    margin: auto 0px;
-    margin-top: 21px;
-    margin-right: 20px;
-    width: 220px;
-    height: 746px;
-    float: left;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.filters h2 {
-    width: 100%;
-    height: 36px;
-    margin: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid coral;
-}
-
-.filters form {
-    width: 100%;
-    height: 690px;
-    margin: 0px;
-    margin-top: 20px;
-    /*Временно для сетки*/
-    outline: 1px solid brown;
-}
-
-.fieldset-price {
-    height: 187px;
-    padding: 0px;
-    margin: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.companies {
-    height: 260px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid coral;
-}
-
-.fieldset-power-supply {
-    height: 198px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid coral;
-}
-
-.filters button {
-    height: 37px;
-    width: 140px;
-    background-color: #ffffff;
-    border: 1px solid #e5e5e5;
-    padding: 0px;
-    margin: auto;
-    margin-top: 8px;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.catalog {
-    width: 700px;
-    height: 992px;
-    margin: 0px;
-    margin-bottom: 73px;
-    float: right;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.catalog-list {
-    width: 700px;
-    height: 992px;
-    margin: 0px;
-    padding-left: 0px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /*Временно для сетки*/
-    outline: 1px solid green;
-}
-
-.catalog-list li {
-    width: 220px;
-    height: 318px;
-    margin-top: 20px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.pagination-list {
-    width: 284px;
-    height: 38px;
-    padding-left: 0px;
-    margin-left: 240px;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
-}
-
-.product-description {
-    min-width: 1200px;
-    height: 260px;
-    margin: 0px;
-    padding-left: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid blue;
-}
-
+/*------------------FOOTER---------------*/
 .index-footer {
-    margin-top: 86px;
+    margin-top: 84px;
 }
 
 .footer {
     height: 298px;
     width: 100%;
+    background-color: #32425c;
 }
 
 .footer-container {
     width: 940px;
     margin: 0 auto;
-    /*Временно для сетки*/
-    outline: 1px solid blue;
 }
 
 .footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 193px;
     width: 100%;
     margin: 0 auto;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
 }
 
 .footer-logo-and-class {
@@ -979,20 +2806,47 @@ body {
 }
 
 .footer-logo {
+    width: 220px;
+    background-color: #a12b2f;
+    margin: 0px;
     height: 68px;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
+}
+
+.footer-logo a {
+    display: block;
+    width: 220px;
+    background-color: #ee3643;
+    margin: 0px;
+    height: 63px;
+}
+
+.footer-logo a:hover {
+    background-color: #ca2c37;
+}
+
+.footer-logo a:active {
+    background-color: #ba2732;
+}
+
+.footer-logo img {
+    padding-top: 21px;
+    padding-left: 42px;
 }
 
 .address {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
     width: 330px;
     height: auto;
     min-height: 42px;
     margin: auto;
-    margin-left: 0px;
-    margin-top: 32px;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
+    margin-left: 2px;
+    margin-top: 28px;
+}
+
+.address a {
+    color: #ffffff;
 }
 
 .footer-navigation-list {
@@ -1001,39 +2855,75 @@ body {
 }
 
 .footer-navigation-part1 {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
     height: 18px;
     width: 548px;
     padding-left: 0px;
     margin: auto;
     margin-right: 0px;
-    margin-top: 41px;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
+    margin-top: 38px;
+}
+
+.footer-navigation-part1 a {
+    color: #ffffff;
+}
+
+.footer-navigation-part1 a:hover {
+    text-decoration: underline #ffffff;
+}
+
+.footer-navigation-part1 a:active {
+    opacity: 0.6;
 }
 
 .footer-navigation-part2 {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
     height: 18px;
     width: 525px;
     padding-left: 0px;
     margin: auto;
     margin-right: 0px;
     margin-top: 40px;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
 }
 
-.requisites {
-    height: 105px;
-    width: 100%;
+.footer-navigation-part2 a {
+    color: #ffda96;
+}
+
+.footer-navigation-part2 a:hover {
+    text-decoration: underline #ffda96;
+}
+
+.footer-navigation-part2 a:active {
+    opacity: 0.6;
 }
 
 .footer-container2 {
+    height: 105px;
+    width: 100%;
+    background-color: #293449;
+}
+
+.requisites {
+    width: 100%;
+    height: 105px;
+    background-color: #293449;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-reguisites-container {
     width: 950px;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    /*Временно для сетки*/
-    outline: 1px solid yellow;
 }
 
 .requisites-container-part1 {
@@ -1041,29 +2931,118 @@ body {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    /*Временно для сетки*/
-    outline: 1px solid coral;
 }
 
 .rights-reserved {
-    width: 230px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    width: 265px;
     height: 38px;
     margin: auto;
-    margin-left: 0px;
-    margin-top: 38px;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
+    margin-left: 5px;
+    margin-top: 35px;
 }
 
 .social-network {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     width: 132px;
     height: 40px;
     padding-left: 0px;
     margin: auto;
     margin-top: 36px;
     margin-right: 0px;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
+}
+
+/*#212a3a*/
+
+.icon-vk {
+    width: 40px;
+    height: 40px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.icon-vk a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.icon-vk a:hover {
+    background-color: #ee3643;
+}
+
+.icon-vk a:active {
+    background-color: #ee3643;
+}
+
+.icon-vk img {
+    width: 27px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.icon-fb {
+    width: 40px;
+    height: 40px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.icon-fb a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.icon-fb a:hover {
+    background-color: #ee3643;
+}
+
+.icon-fb a:active {
+    background-color: #ee3643;
+}
+
+.icon-fb img {
+    height: 22px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.icon-insta {
+    width: 40px;
+    height: 40px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.icon-insta a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.icon-insta a:hover {
+    background-color: #ee3643;
+}
+
+.icon-insta a:active {
+    background-color: #ee3643;
+}
+
+.icon-insta img {
+    height: 25px;
+    margin: auto;
+    margin-top: 8px;
+    margin-left: 9px;
 }
 
 .requisites-container-part2 {
@@ -1071,22 +3050,50 @@ body {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    /*Временно для сетки*/
-    outline: 1px solid coral;
 }
 
 .feedback {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
     width: 140px;
     height: 35px;
-    margin-top: 38px;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
+    margin: auto 0;
+    margin-top: 37px;
+}
+
+.feedback a {
+    color: #ffda96;
+}
+
+.feedback a:hover {
+    text-decoration: underline #ffda96;
+}
+
+.feedback a:active {
+    color: #ee3643;
+    text-decoration: none;
 }
 
 .developers {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
     width: 112px;
     height: 35px;
-    margin-top: 38px;
-    /*Временно для сетки*/
-    outline: 1px solid deepskyblue;
+    margin: auto 0;
+    margin-top: 37px;
+}
+
+.developers a {
+    color: #ffda96;
+}
+
+.developers a:hover {
+    text-decoration: underline #ffda96;
+}
+
+.developers a:active {
+    color: #ee3643;
+    text-decoration: none;
 }
