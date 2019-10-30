@@ -276,30 +276,8 @@
                     </a>
                 </div>
                 <p class="write-us"><a href="#">Заблудились? Напишите нам!</a></p>
-                <section class="large-map">
-                    <img src="img/karta_bol.png" alt="Карта с местонахождением нашего офиса" width="1200" height="779">
-                    <button type="button"></button>
-                </section>
             </section>
         </div>
-        <section class="letter">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-                <p>
-                    <label for="your_name">Ваше имя:</label>
-                    <input id="your_name" type="text" name="name" value="" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label for="your_e-mail">Ваше e-mail:</label>
-                    <input id="your_e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
-                </p>
-                <p>
-                    <label for="your_later">Текст письма:</label>
-                    <textarea id="your_later" name="later" placeholder="В свободной форме"></textarea>
-                </p>
-                <button type="submit">Отправить</button>
-                <button type="button" aria-label="Закрыть окно письма"></button>
-            </form>
-        </section>
     </main>
 </body>
 <footer class="footer index-footer">
@@ -372,13 +350,13 @@
     </div>
 </footer>
 
-<section class="large-map">
-    <img src="img/karta_bol.png" alt="Карта с местонахождением нашего офиса" width="1200" height="779">
+<section class="modal large-map">
+    <img src="img/karta-bol2.png" alt="Карта с местонахождением нашего офиса" width="940" height="447">
     <button type="button"></button>
 </section>
 
-<section class="letter">
-    <form action="https://echo.htmlacademy.ru/" method="post">
+<section class="modal letter">
+    <form class="letter-form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
             <label for="your_name">Ваше имя:</label>
             <input id="your_name" type="text" name="name" value="" placeholder="Имя Фамилия">
@@ -387,12 +365,12 @@
             <label for="your_e-mail">Ваше e-mail:</label>
             <input id="your_e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
         </p>
-        <p>
-            <label for="your_later">Текст письма:</label>
-            <textarea id="your_later" name="later" placeholder="В свободной форме"></textarea>
+        <p class="your-latter">
+            <label for="your_latter">Текст письма:</label>
+            <textarea id="your_latter" name="later" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">Отправить</button>
-        <button type="button" aria-label="Закрыть окно письма"></button>
+        <button class="button-submit" type="submit">Отправить</button>
+        <button class="button-close" type="button" aria-label="Закрыть окно письма"></button>
     </form>
 </section>
 
