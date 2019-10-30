@@ -38,8 +38,8 @@ a {
 }
 
 /*#ee3643
-#a12b2f
-720*/
+#a12b2f*/
+
 .main-header-logo {
     width: 220px;
     height: 47px;
@@ -384,6 +384,7 @@ a {
     width: 270px;
     height: 70px;
     margin-top: 47px;
+    text-align: center;
 }
 
 .tell-and-address a {
@@ -850,7 +851,6 @@ a {
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
-
 }
 
 .less {
@@ -1012,7 +1012,6 @@ a {
     font-size: 17px;
     font-style: normal;
     font-weight: bold;
-
 }
 
 .range-filter {
@@ -1753,7 +1752,6 @@ li:last-child .pagination-list-item {
     align-content: space-between;
     flex-wrap: wrap;
     float: right;
-
 }
 
 .discount-services-item {
