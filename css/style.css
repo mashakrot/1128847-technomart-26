@@ -2,7 +2,7 @@ body,
 html {
     padding: 0;
     margin: 0;
-    font-family: "PT Sans", "Cuprum", sans-serif;
+    font-family: "Cuprum", "PT Sans", sans-serif;
     color: #000000;
     font-size: 13px;
     line-height: 22px;
@@ -92,7 +92,7 @@ a {
     width: 270px;
     height: 36px;
     margin: 0px;
-    padding-top: 6px;
+    padding-top: 7px;
 }
 
 .search input {
@@ -207,10 +207,10 @@ a {
 
 .tabs a {
     display: block;
-    width: 109px;
-    height: 25px;
-    padding-top: 16px;
-    padding-left: 41px;
+    width: 106px;
+    height: 24px;
+    padding-top: 17px;
+    padding-left: 44px;
 }
 
 .tabs::before {
@@ -220,7 +220,7 @@ a {
     height: 16px;
     top: 12px;
     margin: auto;
-    margin-left: 17px;
+    margin-left: 18px;
     background-image: url(../img/svg-technomart/icon-bookmark.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -276,7 +276,7 @@ a {
     height: 16px;
     top: 12px;
     margin: auto;
-    margin-left: 17px;
+    margin-left: 18px;
     background-image: url(../img/svg-technomart/icon-cart.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -285,10 +285,10 @@ a {
 
 .cart a {
     display: block;
-    width: 109px;
-    height: 25px;
-    padding-top: 16px;
-    padding-left: 41px;
+    width: 101px;
+    height: 24px;
+    padding-top: 17px;
+    padding-left: 49px;
 }
 
 .cart a:hover {
@@ -331,12 +331,12 @@ a {
 .place-your-order {
     color: #ffffff;
     width: 150px;
-    height: 26px;
+    height: 25px;
     background-color: #63a63e;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 16px;
+    padding-top: 17px;
 }
 
 .place-your-order:hover {
@@ -379,10 +379,11 @@ a {
 }
 
 .tell-and-address {
-    font-size: 13px;
+    font-size: 14px;
     color: #32425c;
     width: 270px;
     height: 70px;
+    margin: 0px;
     margin-top: 47px;
     text-align: center;
 }
@@ -390,15 +391,11 @@ a {
 .tell-and-address a {
     color: #e9292a;
     font-size: 21px;
-    font-weight: bolder;
     height: 31px;
     display: flex;
     padding-top: 8px;
-    padding-left: 58px;
+    padding-left: 69px;
     border: 3px solid rgb(255, 255, 255);
-    background-image: url(../img/svg-technomart/icon-phone.svg);
-    background-repeat: no-repeat;
-    background-position: center left 12px;
 }
 
 .tell-and-address a::before {
@@ -407,11 +404,16 @@ a {
     width: 20px;
     height: 20px;
     margin: auto;
-    margin-left: -46px;
-    margin-top: 2px;
+    margin-left: -57px;
+    margin-top: 1px;
     background-image: url(../img/svg-technomart/icon-phone.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.tell-and-address span {
+    margin-top: 2px;
+
 }
 
 .login-registration {
@@ -484,9 +486,10 @@ a {
     font-size: 21px;
     background-color: #ffffff;
     color: #000000;
-    height: 19px;
-    width: 100px;
-    padding: 11px 30px 15px 20px;
+    height: 34px;
+    width: 126px;
+    padding-top: 11px;
+    padding-left: 24px;
 }
 
 .registration:hover {
@@ -517,7 +520,8 @@ a {
 }
 
 .your-login {
-    padding-left: 46px;
+    padding-left: 47px;
+    padding-top: 3px;
 }
 
 .your-login a:active {
@@ -530,8 +534,8 @@ a {
     width: 20px;
     height: 20px;
     margin: auto;
-    margin-left: -32px;
-    margin-top: 3px;
+    margin-left: -33px;
+    margin-top: 2px;
     background-image: url(../img/svg-technomart/icon-user.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -582,7 +586,7 @@ a {
     width: 20px;
     height: 20px;
     margin: auto;
-    margin-left: 1px;
+    margin-left: 18px;
     margin-top: 2px;
     background-image: url(../img/svg-technomart/icon-logout.svg);
     background-repeat: no-repeat;
@@ -631,8 +635,12 @@ a {
     padding-left: 2px;
     padding-right: 2px;
     margin: 0 auto;
-    margin-top: 8px;
+    margin-top: 6px;
     margin-left: 16px;
+}
+
+.my-orders-and-cabinet {
+    padding-right: 3px;
 }
 
 .my-orders-and-cabinet a:hover {
@@ -649,6 +657,7 @@ a {
     width: 4px;
     height: 4px;
     margin-top: 9px;
+    margin-left: 2px;
     background-color: #32425c;
     border-radius: 50%;
 }
@@ -663,7 +672,6 @@ a {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
-    background-color: #293449;
     height: 60px;
     width: 940px;
     display: flex;
@@ -683,8 +691,9 @@ a {
     justify-content: space-around;
     align-items: center;
     background-color: #35445e;
+    border-bottom: 5px solid #293449;
     width: 940px;
-    height: 57px;
+    height: 55px;
     margin: auto;
     margin-top: 0px;
     padding-left: 0px;
@@ -696,8 +705,8 @@ a {
     height: 40px;
     width: auto;
     padding-top: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .main-navigation-list a:hover {
@@ -726,6 +735,7 @@ a {
 }
 
 .main-path {
+    font-family: "PT Sans";
     list-style: none;
     display: flex;
     font-size: 13px;
@@ -733,7 +743,7 @@ a {
     height: 25px;
     width: auto;
     margin: auto;
-    margin-top: 18px;
+    margin-top: 19px;
     margin-left: 0px;
     padding-left: 0px;
 }
@@ -742,14 +752,14 @@ a {
     margin-left: 40px;
 }
 
-.main-path li:first-child {
+.main-path .main-path-item1 {
     width: 16px;
     height: 16px;
     padding: 0px;
     margin-left: 0px;
 }
 
-.main-path li:first-child::before {
+.main-path .main-path-item1::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -762,13 +772,19 @@ a {
     background-position: 0 0;
 }
 
+.main-path-item1 a {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
 .main-path-item::before {
     content: "";
     position: absolute;
     width: 20px;
     height: 20px;
     margin: auto;
-    margin-left: -24px;
+    margin-left: -25px;
     margin-top: 5px;
     background-image: url(../img/svg-technomart/icon-right-small.svg);
     background-repeat: no-repeat;
@@ -776,6 +792,7 @@ a {
 }
 
 .main-path a {
+    display: block;
     color: #000000;
 }
 
@@ -793,6 +810,7 @@ a {
 }
 
 .sorting {
+    font-family: "PT Sans";
     width: 700px;
     height: 38px;
     background-color: #f7f3ec;
@@ -808,16 +826,16 @@ a {
     font-size: 13px;
     font-weight: lighter;
     margin: 0px;
-    margin-top: -3px;
-    margin-left: 19px;
+    margin-top: -6px;
+    margin-left: 18px;
 }
 
 .sorting-by {
-    width: 360px;
+    width: 354px;
     padding-left: 0px;
     margin: 0 auto;
-    margin-top: -2px;
-    margin-left: 139px;
+    margin-top: -6px;
+    margin-left: 141px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -854,15 +872,15 @@ a {
 }
 
 .less {
-    height: 100%;
-    width: 20px;
+    height: 23px;
+    width: 23px;
 }
 
 
 .less a {
     display: block;
-    height: 100%;
-    width: 20px;
+    height: 23px;
+    width: 23px;
 }
 
 .less a::before {
@@ -872,7 +890,7 @@ a {
     height: 20px;
     margin: auto;
     margin-left: 3px;
-    margin-top: 5px;
+    margin-top: 3px;
     background-image: url(../img/svg-technomart/icon-up-dir.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -885,7 +903,7 @@ a {
     height: 20px;
     margin: auto;
     margin-left: 3px;
-    margin-top: 5px;
+    margin-top: 3px;
     background-image: url(../img/svg-technomart/icon-up-dir.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -899,7 +917,7 @@ a {
     height: 20px;
     margin: auto;
     margin-left: 3px;
-    margin-top: 5px;
+    margin-top: 3px;
     background-image: url(../img/svg-technomart/icon-up-dir.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -907,14 +925,14 @@ a {
 
 .more {
     display: block;
-    height: 100%;
-    width: 20px;
+    height: 23px;
+    width: 23px;
 }
 
 .more a {
     display: block;
-    height: 100%;
-    width: 20px;
+    height: 23px;
+    width: 23px;
 }
 
 .more a::before {
@@ -924,7 +942,7 @@ a {
     height: 20px;
     margin: auto;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 3px;
     background-image: url(../img/svg-technomart/icon-down-dir.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -938,7 +956,7 @@ a {
     height: 20px;
     margin: auto;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 3px;
     background-image: url(../img/svg-technomart/icon-down-dir.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -951,7 +969,7 @@ a {
     height: 20px;
     margin: auto;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 3px;
     background-image: url(../img/svg-technomart/icon-down-dir-red.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -959,6 +977,7 @@ a {
 }
 
 .filters {
+    font-family: "PT Sans";
     text-transform: uppercase;
     margin: auto 0px;
     margin-top: 21px;
@@ -966,7 +985,6 @@ a {
     width: 220px;
     height: 746px;
     float: left;
-
 }
 
 .filters h2 {
@@ -974,18 +992,17 @@ a {
     font-weight: lighter;
     background-color: #f7f3ec;
     width: 202px;
-    height: 30px;
+    height: 31px;
     margin: 0px;
     padding-left: 18px;
-    padding-top: 6px;
-
+    padding-top: 5px;
 }
 
 .filters form {
     width: 100%;
     height: 690px;
     margin: 0px;
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .fieldset-price {
@@ -1108,7 +1125,7 @@ a {
     width: 220px;
     height: 10px;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 13px;
     background-image: url(../img/ten2.png);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1134,7 +1151,6 @@ a {
     padding-left: 34px;
 }
 
-
 .item-of-manufacturers label {
     position: relative;
     display: block;
@@ -1148,7 +1164,7 @@ a {
     width: 25px;
     height: 25px;
     left: -34px;
-    margin-top: 9px;
+    margin-top: 10px;
     background-image: url(../img/svg-technomart/checkbox-off.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1166,7 +1182,7 @@ a {
     width: 25px;
     height: 25px;
     left: -34px;
-    margin-top: 9px;
+    margin-top: 10px;
     background-image: url(../img/svg-technomart/checkbox-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1218,8 +1234,8 @@ a {
     position: absolute;
     width: 25px;
     height: 25px;
-    left: -34px;
-    margin-top: 8px;
+    left: -35px;
+    margin-top: 9px;
     background-image: url(../img/svg-technomart/radio-off.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1236,8 +1252,8 @@ a {
     position: absolute;
     width: 25px;
     height: 25px;
-    left: -34px;
-    margin-top: 8px;
+    left: -35px;
+    margin-top: 9px;
     background-image: url(../img/svg-technomart/radio-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1256,13 +1272,13 @@ a {
 
 .button-to-show {
     text-transform: uppercase;
-    height: 37px;
+    height: 38px;
     width: 140px;
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     padding: 0px;
     margin: auto;
-    margin-top: 7px;
+    margin-top: 6px;
 }
 
 .catalog {
@@ -1274,6 +1290,7 @@ a {
 }
 
 .catalog-list {
+    font-family: "PT Sans";
     list-style: none;
     width: 700px;
     height: 992px;
@@ -1300,8 +1317,8 @@ a {
     width: 61px;
     height: 70px;
     margin: auto;
-    margin-left: 158px;
-    margin-top: -302px;
+    margin-left: 159px;
+    margin-top: -297px;
     background-image: url(../img/new-flag.png);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1323,22 +1340,18 @@ a {
 }
 
 .catalog-item:hover img {
-    display: none;
+    opacity: 0.0;
 }
 
-.catalog-item:hover .item-info {
-    margin-top: 178px;
-}
-
-.catalog-item .actions:hover {
+.catalog-item:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.actions .buy {
+.buy {
     display: none;
 }
 
-.actions:hover .buy {
+.catalog-item:hover .buy {
     display: block;
     width: 135px;
     height: 28px;
@@ -1356,7 +1369,7 @@ a {
     color: #ffffff;
 }
 
-.actions:hover .buy::before {
+.catalog-item:hover .buy::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -1369,14 +1382,14 @@ a {
     opacity: 0.4;
 }
 
-.actions:hover .buy:hover {
+.catalog-item:hover .buy:hover {
     background-color: #5fbb2d;
     border-color: #367315;
     box-shadow: none;
     opacity: 1;
 }
 
-.actions:hover .buy:hover::before {
+.catalog-item:hover .buy:hover::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -1389,7 +1402,7 @@ a {
     opacity: 1;
 }
 
-.actions:hover .buy:active {
+.catalog-item:hover .buy:active {
     background-color: #518534;
     width: 135px;
     height: 31px;
@@ -1398,7 +1411,7 @@ a {
     opacity: 1;
 }
 
-.actions:hover .buy:active::before {
+.catalog-item:hover .buy:active::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -1411,11 +1424,11 @@ a {
     opacity: 1;
 }
 
-.actions .in-the-bookmark {
+.in-the-bookmark {
     display: none;
 }
 
-.actions:hover .in-the-bookmark {
+.catalog-item:hover .in-the-bookmark {
     display: block;
     width: 129px;
     height: 28px;
@@ -1433,20 +1446,20 @@ a {
     margin-left: 42px;
 }
 
-.actions:hover .in-the-bookmark:hover {
+.catalog-item:hover .in-the-bookmark:hover {
     border-color: #32425c;
     box-shadow: none;
     opacity: 1;
 }
 
-.actions:hover .in-the-bookmark:active {
+.catalog-item:hover .in-the-bookmark:active {
     border-color: #d5d5d5;
     box-shadow: none;
     color: #d5d5d5;
     opacity: 1;
 }
 
-.catalog-item .actions:active {
+.catalog-item:active {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -1455,27 +1468,30 @@ a {
     height: 122px;
     margin: 0px;
     margin-left: 26px;
-    margin-top: -3px;
+    margin-top: -5px;
 }
 
 .name-of-product {
     font-size: 18px;
     width: 165px;
     height: 45px;
-    line-height: 21px;
+    line-height: 20px;
     margin: 0px;
-    margin-top: 7px;
-    margin-bottom: 6px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 26px;
     color: #000000;
     font-size: 18px;
     text-align: center;
 }
 
 .catalog-item del {
+    font-family: "PT Sans";
+    font-weight: bolder;
     color: #999999;
     font-size: 17px;
     margin: auto;
-    margin-left: 53px;
+    margin-left: 77px;
 }
 
 .catalog-item p {
@@ -1485,7 +1501,7 @@ a {
     width: 109px;
     height: 30px;
     margin-top: 6px;
-    margin-left: 15px;
+    margin-left: 42px;
     padding-top: 8px;
     padding-left: 33px;
     background-image: url(../img/svg-technomart/icon-arrow.svg);
@@ -1498,6 +1514,7 @@ a {
 }
 
 .pagination-list {
+    font-family: "PT Sans";
     width: 284px;
     height: 38px;
     padding-left: 0px;
@@ -1593,7 +1610,7 @@ li:last-child .pagination-list-item {
 
 .product-description-container h2 {
     margin: 0 auto;
-    padding-top: 68px;
+    padding-top: 72px;
 }
 
 .paragraph1 {
@@ -1653,8 +1670,8 @@ li:last-child .pagination-list-item {
     width: 120px;
     height: 30px;
     margin: 0px;
-    margin-left: 20px;
-    margin-top: 23px;
+    margin-left: 21px;
+    margin-top: 24px;
 }
 
 .types-of-goods-item p {
@@ -1665,7 +1682,7 @@ li:last-child .pagination-list-item {
     text-transform: uppercase;
     font-size: 14px;
     display: block;
-    width: 117px;
+    width: 109px;
     height: 31px;
     color: #ffffff;
     margin: 0px;
@@ -1673,7 +1690,7 @@ li:last-child .pagination-list-item {
     margin-top: 10px;
     border-radius: 3px;
     padding-top: 7px;
-    padding-left: 18px;
+    padding-left: 26px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -1724,8 +1741,8 @@ li:last-child .pagination-list-item {
 }
 
 .item3 a {
-    width: 113px;
-    padding-left: 20px;
+    width: 105px;
+    padding-left: 29px;
 }
 
 .item3::before {
@@ -1765,8 +1782,8 @@ li:last-child .pagination-list-item {
     width: 150px;
     height: 30px;
     margin: 0px;
-    margin-left: 20px;
-    margin-top: 23px;
+    margin-left: 22px;
+    margin-top: 24px;
 }
 
 .discount-services-item a {
@@ -1777,7 +1794,7 @@ li:last-child .pagination-list-item {
     height: 31px;
     color: #ffffff;
     margin: 0px;
-    margin-left: 25px;
+    margin-left: 24px;
     margin-top: 10px;
     border-radius: 3px;
     padding-top: 7px;
@@ -1811,7 +1828,8 @@ li:last-child .pagination-list-item {
 }
 
 .item4 a {
-    padding-left: 16px;
+    padding-left: 21px;
+    width: 113px;
 }
 
 .item5 {
@@ -1832,8 +1850,8 @@ li:last-child .pagination-list-item {
 }
 
 .item5 a {
-    padding-left: 28px;
-    width: 105px;
+    padding-left: 36px;
+    width: 98px;
 }
 
 .slider {
@@ -1971,8 +1989,8 @@ li:last-child .pagination-list-item {
     font-size: 36px;
     color: #ffffff;
     margin: 0px;
-    margin-left: 21px;
-    padding-top: 28px;
+    margin-left: 24px;
+    padding-top: 29px;
 }
 
 .slider-item p {
@@ -1990,14 +2008,14 @@ li:last-child .pagination-list-item {
     font-size: 14px;
     text-transform: uppercase;
     color: #ffffff;
-    width: 157px;
-    height: 31px;
+    width: 146px;
+    height: 30px;
     margin: 0px;
     margin-top: 116px;
     margin-left: 25px;
     background-color: #ee3643;
     border-radius: 3px;
-    padding-left: 38px;
+    padding-left: 49px;
     padding-top: 7px;
 }
 
@@ -2030,8 +2048,8 @@ li:last-child .pagination-list-item {
     width: 350px;
     float: left;
     margin: 0px;
-    margin-top: 32px;
-    margin-left: 25px;
+    margin-top: 33px;
+    margin-left: 27px;
 }
 
 .button-all-products {
@@ -2039,16 +2057,16 @@ li:last-child .pagination-list-item {
     font-size: 14px;
     text-transform: uppercase;
     color: #ffffff;
-    width: 212px;
-    height: 31px;
+    width: 198px;
+    height: 30px;
     margin: 0px;
     margin-top: 25px;
     margin-right: 24px;
     float: right;
     background-color: #ee3643;
     border-radius: 3px;
-    padding-left: 40px;
-    padding-top: 7px;
+    padding-left: 55px;
+    padding-top: 8px;
 }
 
 .button-all-products:hover {
@@ -2107,14 +2125,10 @@ li:last-child .pagination-list-item {
 }
 
 .popular-product-item:hover img {
-    display: none;
+    opacity: 0.0
 }
 
-.popular-product-item:hover .popular-item-info {
-    margin-top: 177px;
-}
-
-.popular-product-item .actions:hover {
+.popular-product-item:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -2122,7 +2136,7 @@ li:last-child .pagination-list-item {
     display: none;
 }
 
-.popular-product-actions:hover .buy {
+.popular-product-item:hover .buy {
     display: block;
     width: 135px;
     height: 28px;
@@ -2140,7 +2154,7 @@ li:last-child .pagination-list-item {
     color: #ffffff;
 }
 
-.popular-product-actions:hover .buy::before {
+.popular-product-item:hover .buy::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -2153,14 +2167,14 @@ li:last-child .pagination-list-item {
     opacity: 0.4;
 }
 
-.popular-product-actions:hover .buy:hover {
+.popular-product-item:hover .buy:hover {
     background-color: #5fbb2d;
     border-color: #367315;
     box-shadow: none;
     opacity: 1;
 }
 
-.popular-product-actions:hover .buy:hover::before {
+.popular-product-item:hover .buy:hover::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -2173,7 +2187,7 @@ li:last-child .pagination-list-item {
     opacity: 1;
 }
 
-.popular-product-actions:hover .buy:active {
+.popular-product-item:hover .buy:active {
     background-color: #518534;
     width: 135px;
     height: 31px;
@@ -2182,7 +2196,7 @@ li:last-child .pagination-list-item {
     opacity: 1;
 }
 
-.popular-product-actions:hover .buy:active::before {
+.popular-product-item:hover .buy:active::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -2199,7 +2213,7 @@ li:last-child .pagination-list-item {
     display: none;
 }
 
-.popular-product-actions:hover .in-the-bookmark {
+.popular-product-item:hover .in-the-bookmark {
     display: block;
     width: 129px;
     height: 28px;
@@ -2217,20 +2231,20 @@ li:last-child .pagination-list-item {
     margin-left: 42px;
 }
 
-.popular-product-actions:hover .in-the-bookmark:hover {
+.popular-product-item:hover .in-the-bookmark:hover {
     border-color: #32425c;
     box-shadow: none;
     opacity: 1;
 }
 
-.popular-product-actions:hover .in-the-bookmark:active {
+.popular-product-item:hover .in-the-bookmark:active {
     border-color: #d5d5d5;
     box-shadow: none;
     color: #d5d5d5;
     opacity: 1;
 }
 
-.popular-product-item .actions:active {
+.popular-product-item:active {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -2245,18 +2259,23 @@ li:last-child .pagination-list-item {
 }
 
 .name-of-popular-product {
-    margin: 0 auto;
-    margin-top: 7px;
-    margin-bottom: 7px;
     font-size: 18px;
+    width: 165px;
+    height: 45px;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 26px;
     text-align: center;
 }
 
 .popular-product-item del {
+    font-family: "PT Sans";
     color: #999999;
     font-size: 17px;
     margin: auto;
-    margin-left: 53px;
+    margin-left: 77px;
 }
 
 .popular-product-item p {
@@ -2265,8 +2284,8 @@ li:last-child .pagination-list-item {
     margin: 0 auto;
     width: 109px;
     height: 30px;
-    margin-top: 8px;
-    margin-left: 15px;
+    margin-top: 6px;
+    margin-left: 42px;
     padding-top: 8px;
     padding-left: 33px;
     background-image: url(../img/svg-technomart/icon-arrow.svg);
@@ -2299,8 +2318,8 @@ li:last-child .pagination-list-item {
     color: #32425c;
     float: left;
     margin: 0px;
-    margin-top: 31px;
-    margin-left: 25px;
+    margin-top: 32px;
+    margin-left: 27px;
 }
 
 .popular-manufacturer-title a {
@@ -2308,16 +2327,16 @@ li:last-child .pagination-list-item {
     font-size: 14px;
     text-transform: uppercase;
     color: #ffffff;
-    width: 212px;
-    height: 31px;
+    width: 184px;
+    height: 30px;
     margin: 0px;
     margin-top: 25px;
     margin-right: 24px;
     float: right;
     background-color: #ee3643;
     border-radius: 3px;
-    padding-left: 40px;
-    padding-top: 7px;
+    padding-left: 69px;
+    padding-top: 6px;
     border-radius: 3px;
 }
 
@@ -2382,6 +2401,7 @@ li:last-child .pagination-list-item {
 }
 
 .service {
+    font-family: "PT Sans";
     width: 940px;
     height: 522px;
     margin: 0 auto;
@@ -2395,9 +2415,10 @@ li:last-child .pagination-list-item {
 }
 
 .service-title h2 {
+    font-family: "Cuprum";
     width: 160px;
     margin: 0px;
-    margin-top: 11px;
+    margin-top: 12px;
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -2482,6 +2503,7 @@ li:last-child .pagination-list-item {
 }
 
 .service-delivery h3 {
+    font-family: "Cuprum";
     font-size: 36px;
     color: #32425c;
     text-transform: uppercase;
@@ -2519,6 +2541,7 @@ li:last-child .pagination-list-item {
 }
 
 .service-credit h3 {
+    font-family: "Cuprum";
     font-size: 36px;
     color: #32425c;
     text-transform: uppercase;
@@ -2572,6 +2595,7 @@ li:last-child .pagination-list-item {
 }
 
 .service-guarantee h3 {
+    font-family: "Cuprum";
     font-size: 36px;
     color: #32425c;
     text-transform: uppercase;
@@ -2604,7 +2628,7 @@ li:last-child .pagination-list-item {
     width: 940px;
     height: 372px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 82px;
     display: flex;
     justify-content: space-between;
 }
@@ -2621,8 +2645,9 @@ li:last-child .pagination-list-item {
 }
 
 .large-choice {
+    font-family: "PT Sans";
     font-size: 13px;
-    line-height: 25px;
+    line-height: 23px;
     height: 40px;
     width: 100%;
     margin: 0px;
@@ -2630,8 +2655,9 @@ li:last-child .pagination-list-item {
 }
 
 .delivery {
+    font-family: "PT Sans";
     font-size: 13px;
-    line-height: 25px;
+    line-height: 23px;
     height: 40px;
     width: 100%;
     margin: 0px;
@@ -2656,7 +2682,7 @@ li:last-child .pagination-list-item {
     height: 2px;
     margin: auto;
     margin-left: -36px;
-    margin-top: 21px;
+    margin-top: 19px;
     background-position: 0 0;
     background-color: #ee3643;
 }
@@ -2664,13 +2690,13 @@ li:last-child .pagination-list-item {
 
 .more-about-company {
     font-size: 14px;
-    width: 195px;
+    width: 179px;
     height: 30px;
     background-color: #ee3643;
     border-radius: 3px;
     text-transform: uppercase;
-    padding-top: 8px;
-    padding-left: 25px;
+    padding-top: 7px;
+    padding-left: 41px;
     margin: 0px;
     margin-top: 45px;
 }
@@ -2701,8 +2727,9 @@ li:last-child .pagination-list-item {
 }
 
 .our-office {
+    font-family: "PT Sans";
     font-size: 13px;
-    line-height: 25px;
+    line-height: 23px;
     height: 40px;
     width: 100%;
     margin: 0px;
@@ -2717,6 +2744,7 @@ li:last-child .pagination-list-item {
 }
 
 .small-map a {
+    display: block;
     height: 158px;
     width: 100%;
     margin: 0px;
@@ -2725,9 +2753,9 @@ li:last-child .pagination-list-item {
 .write-us {
     font-size: 14px;
     height: 30px;
-    width: 255px;
-    padding-top: 8px;
-    padding-left: 45px;
+    width: 236px;
+    padding-top: 7px;
+    padding-left: 64px;
     border-radius: 3px;
     background-color: #ee3643;
     text-transform: uppercase;
@@ -2985,7 +3013,7 @@ li:last-child .pagination-list-item {
 
 /*------------------FOOTER---------------*/
 .index-footer {
-    margin-top: 84px;
+    margin-top: 82px;
 }
 
 .footer {
@@ -3047,14 +3075,14 @@ li:last-child .pagination-list-item {
 }
 
 .address {
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     line-height: 24px;
     width: 330px;
     height: auto;
     min-height: 42px;
     margin: auto;
-    margin-left: 2px;
+    margin-left: 3px;
     margin-top: 28px;
 }
 
@@ -3117,16 +3145,10 @@ li:last-child .pagination-list-item {
     opacity: 0.6;
 }
 
-.footer-container2 {
-    height: 105px;
-    width: 100%;
-    background-color: #293449;
-}
-
 .requisites {
+    background-color: #293449;
     width: 100%;
     height: 105px;
-    background-color: #293449;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -3153,8 +3175,8 @@ li:last-child .pagination-list-item {
     width: 265px;
     height: 38px;
     margin: auto;
-    margin-left: 5px;
-    margin-top: 35px;
+    margin-left: 7px;
+    margin-top: 37px;
 }
 
 .social-network {
@@ -3166,7 +3188,7 @@ li:last-child .pagination-list-item {
     padding-left: 0px;
     margin: auto;
     margin-top: 36px;
-    margin-right: 0px;
+    margin-right: -4px;
 }
 
 /*#212a3a*/
@@ -3259,7 +3281,7 @@ li:last-child .pagination-list-item {
 }
 
 .requisites-container-part2 {
-    width: 300px;
+    width: 304px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -3296,6 +3318,7 @@ li:last-child .pagination-list-item {
     height: 35px;
     margin: auto 0;
     margin-top: 37px;
+    margin-right: 4px;
 }
 
 .developers a {
