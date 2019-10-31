@@ -2750,6 +2750,7 @@ li:last-child .pagination-list-item {
 /*-----------------PopUp----------------------*/
 
 .modal {
+    display: none;
     position: absolute;
     background-color: #ffffff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -2760,6 +2761,9 @@ li:last-child .pagination-list-item {
     width: 940px;
     height: 447px;
     background-color: #ffffff;
+    background-image: url(../img/karta-bol2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
     top: 2349px;
     left: 25%;
     margin-left: -74px;
@@ -2792,7 +2796,6 @@ li:last-child .pagination-list-item {
 }
 
 .letter {
-    display: none;
     width: 620px;
     height: 311px;
     border-top: 7px solid #ee3643;
@@ -2867,7 +2870,6 @@ li:last-child .pagination-list-item {
     margin-top: 30px;
 }
 
-
 .button-close {
     width: 25px;
     height: 25px;
@@ -2892,6 +2894,10 @@ li:last-child .pagination-list-item {
     background-image: url(../img/svg-technomart/icon-close.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.letter-show {
+    display: block;
 }
 
 .item-in-cart {
