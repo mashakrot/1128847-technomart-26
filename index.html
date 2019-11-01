@@ -126,21 +126,21 @@
                     <li class="popular-product-item">
                         <a class="popular-item-info" href="#">
                             <img src="img/perforatori9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
-                                <h3 class="name-of-popular-product">Перфоратор BOSCH BFG 9000</h3>
-                                <del>25 500 Р.</del>
-                                <p>32500 Р.</p>
-                            <div class="popular-product-actions">
-                                <a class="buy" href="#">Купить</a>
-                                <a class="in-the-bookmark" href="#">В закладки</a>
-                            </div>
+                            <h3 class="name-of-popular-product">Перфоратор BOSCH BFG 9000</h3>
+                            <del>25 500 Р.</del>
+                            <p>32500 Р.</p>
                         </a>
+                        <div class="popular-product-actions">
+                            <a class="buy" href="#">Купить</a>
+                            <a class="in-the-bookmark" href="#">В закладки</a>
+                        </div>
                     </li>
                     <li class="popular-product-item">
                         <a class="popular-item-info" href="#">
                             <img src="img/perforatori3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
-                                <h3 class="name-of-popular-product">Перфоратор BOSCH BFG 3000</h3>
-                                <del>15 500 Р.</del>
-                                <p>22500 Р.</p>
+                            <h3 class="name-of-popular-product">Перфоратор BOSCH BFG 3000</h3>
+                            <del>15 500 Р.</del>
+                            <p>22500 Р.</p>
                         </a>
                         <div class="popular-product-actions">
                             <a class="buy" href="#">Купить</a>
@@ -150,9 +150,9 @@
                     <li class="popular-product-item">
                         <a class="popular-item-info" href="#">
                             <img src="img/perforatori6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
-                                <h3 class="name-of-popular-product">Перфоратор BOSCH BFG 6000</h3>
-                                <del>25 500 Р.</del>
-                                <p>30500 Р.</p>
+                            <h3 class="name-of-popular-product">Перфоратор BOSCH BFG 6000</h3>
+                            <del>25 500 Р.</del>
+                            <p>30500 Р.</p>
                         </a>
                         <div class="popular-product-actions">
                             <a class="buy" href="#">Купить</a>
@@ -162,8 +162,8 @@
                     <li class="popular-product-item">
                         <a class="popular-item-info" href="#">
                             <img src="img/perforatori2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
-                                <h3 class="name-of-popular-product">Перфоратор BOSCH BFG 2000</h3>
-                                <p>12 500 Р.</p>
+                            <h3 class="name-of-popular-product">Перфоратор BOSCH BFG 2000</h3>
+                            <p>12 500 Р.</p>
                         </a>
                         <div class="popular-product-actions">
                             <a class="buy" href="#">Купить</a>
@@ -263,7 +263,7 @@
                 <p class="our-office">Вы можете забрать товар сами,<br>
                     заехав в наш офис:</p>
                 <div class="small-map">
-                    <a href="#">
+                    <a href="https://goo.gl/maps/ZNjFNNaNyha5f5WQA">
                         <img src="img/karta_mal.png" alt="Карта с местонахождением нашего офиса" width="300" height="158">
                     </a>
                 </div>
@@ -340,32 +340,25 @@
         </div>
     </footer>
 
-    <script src="js/interakt-karta.js"></script>
+    <section class="modal letter">
+        <form class="letter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+                <label for="your_name">Ваше имя:</label>
+                <input id="your_name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p>
+                <label for="your_e-mail">Ваше e-mail:</label>
+                <input id="your_e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
+            </p>
+            <p class="your-latter">
+                <label for="your_latter">Текст письма:</label>
+                <textarea id="your_latter" name="later" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button-submit" type="submit">Отправить</button>
+            <button class="button-close" type="button" aria-label="Закрыть окно письма"></button>
+        </form>
+    </section>
 
 </body>
-
-<section class="modal large-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5942320458557!2d30.32108402186735!3d59.938875024914466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1572393932881!5m2!1sru!2slt" width="940" height="447" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    <button type="button"></button>
-</section>
-
-<section class="modal letter">
-    <form class="letter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p>
-            <label for="your_name">Ваше имя:</label>
-            <input id="your_name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p>
-            <label for="your_e-mail">Ваше e-mail:</label>
-            <input id="your_e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
-        </p>
-        <p class="your-latter">
-            <label for="your_latter">Текст письма:</label>
-            <textarea id="your_latter" name="later" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button-submit" type="submit">Отправить</button>
-        <button class="button-close" type="button" aria-label="Закрыть окно письма"></button>
-    </form>
-</section>
 
 </html>
