@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-style.css">
 </head>
 
 <body>
@@ -125,7 +125,7 @@
                 </div>
                 <ul class="popular-product-list">
                     <li class="popular-product-item">
-                       <div class="popular-product-actions">
+                        <div class="popular-product-actions">
                             <a class="buy" href="#">Купить</a>
                             <a class="in-the-bookmark" href="#">В закладки</a>
                         </div>
@@ -137,7 +137,7 @@
                         </a>
                     </li>
                     <li class="popular-product-item">
-                       <div class="popular-product-actions">
+                        <div class="popular-product-actions">
                             <a class="buy" href="#">Купить</a>
                             <a class="in-the-bookmark" href="#">В закладки</a>
                         </div>
@@ -149,7 +149,7 @@
                         </a>
                     </li>
                     <li class="popular-product-item">
-                       <div class="popular-product-actions">
+                        <div class="popular-product-actions">
                             <a class="buy" href="#">Купить</a>
                             <a class="in-the-bookmark" href="#">В закладки</a>
                         </div>
@@ -161,7 +161,7 @@
                         </a>
                     </li>
                     <li class="popular-product-item">
-                       <div class="popular-product-actions">
+                        <div class="popular-product-actions">
                             <a class="buy" href="#">Купить</a>
                             <a class="in-the-bookmark" href="#">В закладки</a>
                         </div>
@@ -264,9 +264,7 @@
                 <p class="our-office">Вы можете забрать товар сами,<br>
                     заехав в наш офис:</p>
                 <div class="small-map">
-                    <a href="https://goo.gl/maps/ZNjFNNaNyha5f5WQA">
-                        <img src="img/karta_mal.png" alt="Карта с местонахождением нашего офиса" width="300" height="158">
-                    </a>
+                        <img class="small-map-link" src="img/karta_mal.png" alt="Карта с местонахождением нашего офиса" width="300" height="158">
                 </div>
                 <p class="write-us"><a href="#">Заблудились? Напишите нам!</a></p>
             </section>
@@ -341,6 +339,12 @@
         </div>
     </footer>
 
+    <section class="modal large-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5942320458557!2d30.32108402186735!3d59.938875024914466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1572393932881!5m2!1sru!2slt" width="940" height="447" allowfullscreen=""></iframe>
+        <button class="modal-close" type="button"></button>
+    </section>
+
     <section class="modal letter">
         <form class="letter-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>
@@ -359,6 +363,9 @@
             <button class="button-close" type="button" aria-label="Закрыть окно письма"></button>
         </form>
     </section>
+
+    <script src="js/min-interactive-letter.js"></script>
+    <script src="js/min-interactive-map.js"></script>
 
 </body>
 

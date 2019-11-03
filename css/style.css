@@ -81,22 +81,6 @@ a {
     position: relative;
 }
 
-/*
-.search p {
-    width: 270px;
-    height: 42px;
-    margin: 0;
-    color: #ffffff;
-}
-
-.search label {
-    width: 270px;
-    height: 42px;
-    margin: 0;
-    margin-top: -1px;
-    color: #ffffff;
-}*/
-
 .search-input {
     font: inherit;
     width: 220px;
@@ -1884,6 +1868,7 @@ li:last-child .pagination-list-item {
 .slider-controls label {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 10px;
     height: 10px;
     padding: 5px;
@@ -1968,12 +1953,14 @@ li:last-child .pagination-list-item {
 .slider-item:nth-child(1) {
     background-image: url(../img/dreli.jpg);
     background-repeat: no-repeat;
+    background-color: #d5c5b2;
     background-position: 0 0px;
 }
 
 .slider-item:nth-child(2) {
     background-image: url(../img/perforator.jpg);
     background-repeat: no-repeat;
+    background-color: #d5c5b2;
     background-position: 0 0px;
 }
 
@@ -2739,6 +2726,7 @@ li:last-child .pagination-list-item {
     width: 100%;
     margin: 0px;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .small-map a {
@@ -2782,7 +2770,10 @@ li:last-child .pagination-list-item {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-/*
+.map-show {
+    display: block;
+}
+
 .large-map {
     width: 940px;
     height: 447px;
@@ -2824,7 +2815,6 @@ li:last-child .pagination-list-item {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-*/
 
 .letter {
     width: 620px;
@@ -2935,11 +2925,18 @@ li:last-child .pagination-list-item {
 
 .letter-show {
     display: block;
-    animation: bounce 0.6s;
+    animation: bounce 0.4s;
+}
+
+.letter-error {
+    animation: shake 0.6s;
+}
+
+.item-in-cart-show {
+    display: block;
 }
 
 .item-in-cart {
-    display: none;
     position: fixed;
     width: 620px;
     height: 163px;
@@ -3019,24 +3016,47 @@ li:last-child .pagination-list-item {
     background-position: 0 0;
 }
 
-/*
+
 @keyframes bounce {
     0% {
-        transform: translateY(-2000px);
+        transform: translateY(200px);
     }
 
     70% {
-        transform: translateY(30px);
+        transform: translateY(-30px);
     }
 
     90% {
-        transform: translateY(-10px);
+        transform: translateY(10px);
     }
 
     100% {
         transform: translateY(0);
     }
-}*/
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
 
 
 /*------------------FOOTER---------------*/
